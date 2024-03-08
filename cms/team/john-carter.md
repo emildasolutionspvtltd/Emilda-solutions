@@ -1,22 +1,21 @@
 ---
-f_team-member-linkedin-link: https://github.com/
-f_team-member-twitter-link: https://twitter.com/
-f_team-member-facebook-link: https://www.facebook.com/
-f_team-member-job-title: CEO & Co-Founder
 title: John Carter
-f_team-member-excerpt: >-
-  Lorem ipsum dolor sit amet consecte adipiscing elit amet hendrerit pretium
-  nulla sed enim iaculis mi.
-slug: john-carter
+created-on: 2022-02-26T00:30:40.144Z
+updated-on: 2022-02-26T00:30:40.144Z
+published-on: 2023-04-28T20:34:00.007Z
 f_team-member-portrait-picture:
-  url: >-
-    https://uploads-ssl.webflow.com/644c29ee1dd8d0985f4a1348/644c29ee1dd8d01fd64a135f_image-4-team-dev-template.jpg
+  url: /assets/images/1625123871577-02.jpeg
   alt: null
-updated-on: '2022-02-26T00:30:40.144Z'
-created-on: '2022-02-26T00:30:40.144Z'
-published-on: '2023-04-28T20:34:00.007Z'
-layout: '[team].html'
+f_team-member-job-title: CEO & Co-Founder
+f_team-member-excerpt: Lorem ipsum dolor sit amet consecte adipiscing elit amet
+  hendrerit pretium nulla sed enim iaculis mi.
+f_team-member-facebook-link: https://www.facebook.com/
+f_team-member-linkedin-link: https://github.com/
+layout: "[team].html"
+slug: john-carter
+f_team-member-twitter-link: https://twitter.com/
 tags: team
+date: 2024-03-08T11:10:19.396Z
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit sed dolor eiusmod tempor incididunt ut labore et dolore.
