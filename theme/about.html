@@ -262,12 +262,12 @@
                         <a id="w-node-e437ff19-0ac2-7200-17e1-0a74a12ead1c-a14a1376" href="{{ item.url }}" class="link-content card-team w-inline-block">
                           <div class="mg-right-16px">
                             <div class="inner-container _80px">
-                              <div class="image-wrapper border-radius-6px card-team-item"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;23vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;13vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;7vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;5vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;58.628475189208984px&quot;}]" src="{{ images.0.url }}" class="image cover"></div>
+                              <div class="image-wrapper border-radius-6px card-team-item"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;23vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;13vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;7vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;5vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;58.628475189208984px&quot;}]" src="{{ item.data.f_team-member-portrait-picture.url }}" class="image cover"></div>
                             </div>
                           </div>
                           <div class="width-100">
-                            <h3 class="heading-h4-size"></h3>
-                            <div class="text-200 medium color-neutral-400"></div>
+                            <h3 class="heading-h4-size">{{ item.data.title }}</h3>
+                            <div class="text-200 medium color-neutral-400">{{ item.data.f_team-member-job-title }}</div>
                           </div>
                         </a>
                         <div class="w-layout-grid social-media-links-grid card-team">
@@ -284,7 +284,7 @@
                       </div>
                     </div>
                     <a href="{{ item.url }}" class="link-content w-inline-block">
-                      <p class="mg-bottom-0"></p>
+                      <p class="mg-bottom-0">{{ item.data.f_team-member-excerpt }}</p>
                     </a>
                   </div>
                 </div>{%- endfor -%}
@@ -554,6 +554,9 @@
               <a href="{{ links.23 }}" class="w-inline-block">
                 <div class="link-11">{{ texts.243e72d4 }}</div>
               </a>
+              <a href="{{ links.-705e712d }}" class="w-inline-block">
+                <div class="link-11">{{ texts.-234a8d26 }}</div>
+              </a>
             </div>
           </div>
         </div>
@@ -588,4 +591,4 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
 
-<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}{%- include "partials/_snipcart-footer" -%}</body></html>
+<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.4/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script>{%- include "partials/_snipcart-footer" -%}</body></html>

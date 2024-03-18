@@ -162,7 +162,7 @@
               <div class="text-center">
                 <div data-w-id="22d3a150-8997-feea-a1aa-6717cadd5203" style="-webkit-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="mg-bottom-40px">
                   <div class="flex-horizontal justify-center children-wrap">
-                    <h1 class="display-2 mg-bottom-0"></h1>
+                    <h1 class="display-2 mg-bottom-0">{{ title }}</h1>
                     <h2 class="display-2 mg-bottom-0">{{ texts.13a73fca }}</h2>
                   </div>
                 </div>
@@ -186,13 +186,13 @@
                 <a href="{{ item.url }}" class="card link-card career w-inline-block">
                   <div class="mg-bottom-16px">
                     <div class="flex-horizontal align-center">
-                      <div class="text-200"></div>
+                      <div class="text-200">{{ item.data.f_career-job-location }}</div>
                       {%- if item.data.f_career-working-time -%}<div class="text-divider v2"></div>{%- endif -%}
-                      <div class="text-200"></div>
+                      <div class="text-200">{{ item.data.f_career-working-time | markdown }}</div>
                     </div>
                   </div>
-                  <h3 class="heading-h3-size"></h3>
-                  <p class="mg-bottom-0"></p>
+                  <h3 class="heading-h3-size">{{ item.data.title }}</h3>
+                  <p class="mg-bottom-0">{{ item.data.f_career-job-excerpt-card-grid }}</p>
                 </a>
               </div>{%- endfor -%}
             </div>{%- endunless -%}
@@ -252,6 +252,9 @@
               <a href="{{ links.23 }}" class="w-inline-block">
                 <div class="link-11">{{ texts.243e72d4 }}</div>
               </a>
+              <a href="{{ links.-705e712d }}" class="w-inline-block">
+                <div class="link-11">{{ texts.-234a8d26 }}</div>
+              </a>
             </div>
           </div>
         </div>
@@ -286,4 +289,4 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
 
-<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}{%- include "partials/_snipcart-footer" -%}</body></html>
+<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.4/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script>{%- include "partials/_snipcart-footer" -%}</body></html>

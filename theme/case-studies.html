@@ -168,8 +168,8 @@
           {%- unless collection.length == 0 -%}<div role="list" class="grid-2-columns w-dyn-items">
             {%- for item in collection -%}<div id="w-node-_3eda042a-47e8-a81e-6b3b-e00718908752-774a137d" role="listitem" class="w-dyn-item">
               <a href="{{ item.url }}" class="card link-card project-item w-inline-block">
-                <div class="mg-bottom-32px"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" src="{{ images.0.url }}" class=""></div>
-                <h2 class="display-4 mg-bottom-32px"></h2>
+                <div class="mg-bottom-32px"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;100vw&quot;}]" src="{{ item.data.f_project-client-logo.url }}" class=""></div>
+                <h2 class="display-4 mg-bottom-32px">{{ item.data.title }}</h2>
                 <div data-w-id="324d4da8-b2ea-ec8e-a58f-d885f4e5a894" class="link-wrapper white-color-hover-none mg-top-auto">
                   <div class="link-text">{{ texts.4ee07583 }}</div>
                   <div class="line-rounded-icon link-icon-right">{{ texts.e805 }}</div>
@@ -270,6 +270,9 @@
               <a href="{{ links.23 }}" class="w-inline-block">
                 <div class="link-11">{{ texts.243e72d4 }}</div>
               </a>
+              <a href="{{ links.-705e712d }}" class="w-inline-block">
+                <div class="link-11">{{ texts.-234a8d26 }}</div>
+              </a>
             </div>
           </div>
         </div>
@@ -304,4 +307,4 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
 
-<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}{%- include "partials/_snipcart-footer" -%}</body></html>
+<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.4/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script>{%- include "partials/_snipcart-footer" -%}</body></html>

@@ -162,13 +162,13 @@
               <div class="text-center">
                 <div data-w-id="a9aeea1d-5717-0541-0b16-9bae1e1bc094" style="-webkit-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="mg-bottom-24px">
                   <div class="flex-horizontal justify-center">
-                    <div class="text-200"></div>
+                    <div class="text-200">{{ f_career-job-location }}</div>
                     {%- if f_career-working-time -%}<div class="text-divider v2"></div>{%- endif -%}
-                    <div class="text-200"></div>
+                    <div class="text-200">{{ f_career-working-time | markdown }}</div>
                   </div>
                 </div>
-                <h1 data-w-id="ac9e71cf-0ccd-3bde-173b-97279d5050f0" style="-webkit-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="display-3"></h1>
-                <p data-w-id="5860e951-084c-2814-88ce-9b1dec84f413" style="-webkit-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="mg-bottom-40px"></p>
+                <h1 data-w-id="ac9e71cf-0ccd-3bde-173b-97279d5050f0" style="-webkit-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="display-3">{{ title }}</h1>
+                <p data-w-id="5860e951-084c-2814-88ce-9b1dec84f413" style="-webkit-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="mg-bottom-40px">{{ f_career-job-short-description-page }}</p>
                 {%- if f_career-job-application-email -%}<div data-w-id="4c98a929-8dea-c69b-e7ce-942c2d771484" style="-webkit-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="buttons-row center">
                   <a href="{{ "mailto:" | append: f_career-job-application-email }}" class="btn-primary w-button">{{ texts.-45d8cfc }}</a>
                 </div>{%- endif -%}
@@ -193,11 +193,11 @@
             <div class="position-relative">
               {%- if f_career-job-location -%}<div data-w-id="8969a3bf-6eb5-1a16-3f15-c5baf7e088c2" style="-webkit-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="mg-bottom-24px">
                 <h2 class="mg-bottom-10px">{{ texts.-39d63007 }}</h2>
-                <div class="rich-text w-richtext"></div>
+                <div class="rich-text w-richtext">{{ content | markdown }}</div>
               </div>{%- endif -%}
               {%- if f_career-job-requirements -%}<div data-w-id="777bb034-90cb-49e7-01a9-fb561f91f348" style="-webkit-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0">
                 <h2 class="mg-bottom-10px">{{ texts.1107e033 }}</h2>
-                <div class="rich-text w-richtext"></div>
+                <div class="rich-text w-richtext">{{ f_career-job-requirements | markdown }}</div>
               </div>{%- endif -%}
               <div data-w-id="b4262d21-ef74-6156-f000-21ca9289e3a7" style="opacity:0" class="divider _50px"></div>
               <div data-w-id="1d8e2d34-ab75-50af-1cc3-99f08b5ffb73" style="-webkit-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="w-layout-grid grid-2-columns _2-col-mbl _1-col-mbp">
@@ -206,7 +206,7 @@
                 </div>{%- endif -%}
                 <div id="w-node-_9cb3d64c-437e-fe45-9192-e86f1e25a010-3a4a1399" class="flex-horizontal children-wrap">
                   <div>{{ texts.-5478dc1a }}</div>
-                  <div class=""></div>
+                  <div class="">{{  f_updated-on | formatDate: "MMM d, yyyy" }}</div>
                 </div>
               </div>
               <div data-w-id="8f967312-5fca-1c5a-44ca-30c557566eb9" style="opacity:0" class="position-absolute bg-square-default career-bg">
@@ -244,13 +244,13 @@
                 <a href="{{ item.url }}" class="card link-card career w-inline-block">
                   <div class="mg-bottom-16px">
                     <div class="flex-horizontal align-center">
-                      <div class="text-200"></div>
+                      <div class="text-200">{{ item.data.f_career-job-location }}</div>
                       {%- if item.data.f_career-working-time -%}<div class="text-divider v2"></div>{%- endif -%}
-                      <div class="text-200"></div>
+                      <div class="text-200">{{ item.data.f_career-working-time | markdown }}</div>
                     </div>
                   </div>
-                  <h3 class="heading-h3-size"></h3>
-                  <p class="mg-bottom-0"></p>
+                  <h3 class="heading-h3-size">{{ item.data.title }}</h3>
+                  <p class="mg-bottom-0">{{ item.data.f_career-job-excerpt-card-grid }}</p>
                 </a>
               </div>{%- endfor -%}
             </div>{%- endunless -%}
@@ -310,6 +310,9 @@
               <a href="{{ links.23 }}" class="w-inline-block">
                 <div class="link-11">{{ texts.243e72d4 }}</div>
               </a>
+              <a href="{{ links.-705e712d }}" class="w-inline-block">
+                <div class="link-11">{{ texts.-234a8d26 }}</div>
+              </a>
             </div>
           </div>
         </div>
@@ -344,4 +347,4 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
 
-<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}{%- include "partials/_snipcart-footer" -%}</body></html>
+<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.4/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script>{%- include "partials/_snipcart-footer" -%}</body></html>

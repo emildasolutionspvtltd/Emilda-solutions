@@ -159,7 +159,7 @@
         <div class="inner-container _550px-mbl center">
           <div data-w-id="f42ef800-6c6c-4af3-4bd1-0f190a8dab1b" style="-webkit-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="mg-bottom-64px">
             <div class="w-layout-grid grid-2-columns title-and-button">
-              <h1 id="w-node-f42ef800-6c6c-4af3-4bd1-0f190a8dab1d-734a1398" class="mg-bottom-0"></h1>
+              <h1 id="w-node-f42ef800-6c6c-4af3-4bd1-0f190a8dab1d-734a1398" class="mg-bottom-0">{{ title }}</h1>
               {%- assign collection = collections.blog-post-categories | sort: "-created-on" -%}<div id="w-node-f42ef800-6c6c-4af3-4bd1-0f190a8dab1f-734a1398" class="w-dyn-list">
                 {%- unless collection.length == 0 -%}<div role="list" class="categories-wrapper title-and-button w-dyn-items">
                   {%- for item in collection -%}<div role="listitem" class="category-item w-dyn-item">
@@ -177,15 +177,15 @@
             {%- unless pagination.length == 0 -%}<div role="list" class="grid-2-columns gap-48px w-dyn-items">
               {%- for item in pagination[0] -%}<div id="w-node-f42ef800-6c6c-4af3-4bd1-0f190a8dab2a-734a1398" role="listitem" class="w-dyn-item">
                 <a href="{{ item.url }}" class="card link-card post-item w-inline-block">
-                  <div class="image-wrapper"><img loading="eager" alt="{{ images.0.alt | escape }}" src="{{ images.0.url }}" class="image cover"></div>
+                  <div class="image-wrapper"><img loading="eager" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" class="image cover"></div>
                   <div class="card-post-content">
-                    <h2 class="heading-h3-size mg-bottom-16px"></h2>
-                    <p class="mg-bottom-0"></p>
+                    <h2 class="heading-h3-size mg-bottom-16px">{{ item.data.title }}</h2>
+                    <p class="mg-bottom-0">{{ item.data.f_blog-post-excerpt }}</p>
                     <div class="mg-top-auto">
                       <div class="divider _32px"></div>
                       <div class="w-layout-grid grid-2-columns card-post">
-                        <div id="w-node-f42ef800-6c6c-4af3-4bd1-0f190a8dab34-734a1398" class="badge-secondary small"></div>
-                        <div id="w-node-f42ef800-6c6c-4af3-4bd1-0f190a8dab35-734a1398" class="text-200 color-neutral-200"></div>
+                        {%- assign ref = item.data.f_blog-post-category | resolveReference -%}<div id="w-node-f42ef800-6c6c-4af3-4bd1-0f190a8dab34-734a1398" class="badge-secondary small">{{ ref.data.title }}</div>
+                        <div id="w-node-f42ef800-6c6c-4af3-4bd1-0f190a8dab35-734a1398" class="text-200 color-neutral-200">{{  item.data.f_updated-on | formatDate: "MMM d, yyyy" }}</div>
                       </div>
                     </div>
                   </div>
@@ -193,15 +193,15 @@
               </div>{%- endfor -%}
             {%- for paginationPage in pagination -%}{%- if forloop.index > 1 -%}{%- assign paginationFilePath = "/public/_data/paginations" | appendMultiple: page.filePathStem, "/page--fc7b7a9-", forloop.index, ".html" -%}<template data-pagination-index="{{ forloop.index }}" data-pagination-url="{{ paginationFilePath | replace: "/public", "" }}">{% capture currentPageHTML %}{%- for item in paginationPage -%}<div id="w-node-f42ef800-6c6c-4af3-4bd1-0f190a8dab2a-734a1398" role="listitem" class="w-dyn-item">
                 <a href="{{ item.url }}" class="card link-card post-item w-inline-block">
-                  <div class="image-wrapper"><img loading="eager" alt="{{ images.0.alt | escape }}" src="{{ images.0.url }}" class="image cover w-dyn-bind-empty"></div>
+                  <div class="image-wrapper"><img loading="eager" alt="{{ images.0.alt | escape }}" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" class="image cover"></div>
                   <div class="card-post-content">
-                    <h2 class="heading-h3-size mg-bottom-16px w-dyn-bind-empty"></h2>
-                    <p class="mg-bottom-0 w-dyn-bind-empty"></p>
+                    <h2 class="heading-h3-size mg-bottom-16px w-dyn-bind-empty">{{ item.data.title }}</h2>
+                    <p class="mg-bottom-0 w-dyn-bind-empty">{{ item.data.f_blog-post-excerpt }}</p>
                     <div class="mg-top-auto">
                       <div class="divider _32px"></div>
                       <div class="w-layout-grid grid-2-columns card-post">
-                        <div id="w-node-f42ef800-6c6c-4af3-4bd1-0f190a8dab34-734a1398" class="badge-secondary small w-dyn-bind-empty"></div>
-                        <div id="w-node-f42ef800-6c6c-4af3-4bd1-0f190a8dab35-734a1398" class="text-200 color-neutral-200 w-dyn-bind-empty"></div>
+                        {%- assign ref = item.data.f_blog-post-category | resolveReference -%}<div id="w-node-f42ef800-6c6c-4af3-4bd1-0f190a8dab34-734a1398" class="badge-secondary small w-dyn-bind-empty">{{ ref.data.title }}</div>
+                        <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoDateTimeToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Enum&quot;,&quot;val&quot;:&quot;MMM D, YYYY&quot;}}},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;updated-on&quot;}}}}}" id="w-node-f42ef800-6c6c-4af3-4bd1-0f190a8dab35-734a1398" class="text-200 color-neutral-200 w-dyn-bind-empty">{{  item.data.f_updated-on | formatDate: "MMM d, yyyy" }}</div>
                       </div>
                     </div>
                   </div>
@@ -271,6 +271,9 @@
               <a href="{{ links.23 }}" class="w-inline-block">
                 <div class="link-11">{{ texts.243e72d4 }}</div>
               </a>
+              <a href="{{ links.-705e712d }}" class="w-inline-block">
+                <div class="link-11">{{ texts.-234a8d26 }}</div>
+              </a>
             </div>
           </div>
         </div>
@@ -305,4 +308,4 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
 
-<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}{%- include "partials/_snipcart-footer" -%}</body></html>
+<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.4/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script>{%- include "partials/_snipcart-footer" -%}</body></html>

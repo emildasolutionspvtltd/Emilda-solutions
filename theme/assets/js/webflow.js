@@ -18266,13 +18266,11 @@
   });
 
   // node_modules/@apollo/client/utilities/globals/index.js
-  var DEV;
   var init_globals = __esm({
     "node_modules/@apollo/client/utilities/globals/index.js"() {
       init_invariantWrappers();
       init_maybe();
       init_global();
-      DEV = globalThis.__DEV__ !== false;
     }
   });
 
@@ -22182,7 +22180,6 @@ spurious results.`);
           return getInUseByFragmentName(ancestor.name.value);
         }
       }
-      globalThis.__DEV__ !== false && invariant2.error(82);
       return null;
     };
     var operationCount = 0;
@@ -23172,39 +23169,14 @@ spurious results.`);
   });
 
   // node_modules/@apollo/client/utilities/common/maybeDeepFreeze.js
-  function deepFreeze(value) {
-    var workSet = /* @__PURE__ */ new Set([value]);
-    workSet.forEach(function(obj) {
-      if (isNonNullObject(obj) && shallowFreeze(obj) === obj) {
-        Object.getOwnPropertyNames(obj).forEach(function(name) {
-          if (isNonNullObject(obj[name]))
-            workSet.add(obj[name]);
-        });
-      }
-    });
-    return value;
-  }
-  function shallowFreeze(obj) {
-    if (globalThis.__DEV__ !== false && !Object.isFrozen(obj)) {
-      try {
-        Object.freeze(obj);
-      } catch (e) {
-        if (e instanceof TypeError)
-          return null;
-        throw e;
-      }
-    }
-    return obj;
-  }
   function maybeDeepFreeze(obj) {
-    if (globalThis.__DEV__ !== false) {
+    if (false) {
       deepFreeze(obj);
     }
     return obj;
   }
   var init_maybeDeepFreeze = __esm({
     "node_modules/@apollo/client/utilities/common/maybeDeepFreeze.js"() {
-      init_objects();
     }
   });
 
@@ -23766,7 +23738,6 @@ spurious results.`);
         ApolloLink2.concat = function(first, second) {
           var firstLink = toLink(first);
           if (isTerminating(firstLink)) {
-            globalThis.__DEV__ !== false && invariant2.warn(35, firstLink);
             return firstLink;
           }
           var nextLink = toLink(second);
@@ -24420,7 +24391,6 @@ spurious results.`);
       init_serializeFetchParameter();
       init_selectURI();
       init_parseAndCheckHttpResponse();
-      init_checkFetcher();
       init_selectHttpOptionsAndBody();
       init_rewriteURIForGET();
       init_utils();
@@ -24433,7 +24403,7 @@ spurious results.`);
           linkOptions = {};
         }
         var _a2 = linkOptions.uri, uri = _a2 === void 0 ? "/graphql" : _a2, preferredFetch = linkOptions.fetch, _b = linkOptions.print, print3 = _b === void 0 ? defaultPrinter : _b, includeExtensions = linkOptions.includeExtensions, preserveHeaderCase = linkOptions.preserveHeaderCase, useGETForQueries = linkOptions.useGETForQueries, _c = linkOptions.includeUnusedVariables, includeUnusedVariables = _c === void 0 ? false : _c, requestOptions = __rest(linkOptions, ["uri", "fetch", "print", "includeExtensions", "preserveHeaderCase", "useGETForQueries", "includeUnusedVariables"]);
-        if (globalThis.__DEV__ !== false) {
+        if (false) {
           checkFetcher(preferredFetch || backupFetch);
         }
         var linkConfig = {
@@ -24493,7 +24463,6 @@ spurious results.`);
             options.headers = options.headers || {};
             var acceptHeader = "multipart/mixed;";
             if (isSubscription && hasDefer) {
-              globalThis.__DEV__ !== false && invariant2.warn(38);
             }
             if (isSubscription) {
               acceptHeader += "boundary=graphql;subscriptionSpec=1.0,application/json";
@@ -25550,9 +25519,6 @@ spurious results.`);
     var value = config.canonizeResults;
     return value === void 0 ? defaultConfig.canonizeResults : value;
   }
-  function getTypenameFromStoreObject(store, objectOrReference) {
-    return isReference(objectOrReference) ? store.get(objectOrReference.__ref, "__typename") : objectOrReference && objectOrReference.__typename;
-  }
   function fieldNameFromStoreName(storeFieldName) {
     var match = storeFieldName.match(TypeOrFieldNameRegExp);
     return match ? match[0] : storeFieldName;
@@ -25787,10 +25753,9 @@ spurious results.`);
                     changedFields_1[storeFieldName] = newValue;
                     needToMerge_1 = true;
                     fieldValue = newValue;
-                    if (globalThis.__DEV__ !== false) {
+                    if (false) {
                       var checkReference = function(ref) {
                         if (_this.lookup(ref.__ref) === void 0) {
-                          globalThis.__DEV__ !== false && invariant2.warn(2, ref);
                           return true;
                         }
                       };
@@ -25814,7 +25779,6 @@ spurious results.`);
                             }
                           }
                           if (seenReference && someNonReference !== void 0) {
-                            globalThis.__DEV__ !== false && invariant2.warn(3, someNonReference);
                             break;
                           }
                         }
@@ -26181,7 +26145,7 @@ spurious results.`);
                 var node = this.pool.lookupArray(array);
                 if (!node.array) {
                   this.known.add(node.array = array);
-                  if (globalThis.__DEV__ !== false) {
+                  if (false) {
                     Object.freeze(array);
                   }
                 }
@@ -26206,7 +26170,7 @@ spurious results.`);
                   keys.sorted.forEach(function(key, i) {
                     obj_1[key] = array_1[firstValueIndex_1 + i];
                   });
-                  if (globalThis.__DEV__ !== false) {
+                  if (false) {
                     Object.freeze(obj_1);
                   }
                 }
@@ -26269,22 +26233,6 @@ spurious results.`);
       });
     } catch (result2) {
       return result2;
-    }
-  }
-  function assertSelectionSetForIdValue(store, field, fieldValue) {
-    if (!field.selectionSet) {
-      var workSet_1 = /* @__PURE__ */ new Set([fieldValue]);
-      workSet_1.forEach(function(value) {
-        if (isNonNullObject(value)) {
-          invariant2(
-            !isReference(value),
-            10,
-            getTypenameFromStoreObject(store, value),
-            field.name.value
-          );
-          Object.values(value).forEach(workSet_1.add, workSet_1);
-        }
-      });
     }
   }
   var StoreReader;
@@ -26513,7 +26461,7 @@ spurious results.`);
                 context
               }), i);
             }
-            if (globalThis.__DEV__ !== false) {
+            if (false) {
               assertSelectionSetForIdValue(context.store, field, item);
             }
             return item;
@@ -26789,8 +26737,7 @@ spurious results.`);
         options.from = objectOrReference;
       }
     }
-    if (globalThis.__DEV__ !== false && options.from === void 0) {
-      globalThis.__DEV__ !== false && invariant2.warn(7, stringifyForDisplay(Array.from(readFieldArgs)));
+    if (false) {
     }
     if (void 0 === options.variables) {
       options.variables = variables;
@@ -27051,7 +26998,6 @@ spurious results.`);
               if (supertypeSet.has(supertype)) {
                 if (!typenameSupertypeSet.has(supertype)) {
                   if (checkingFuzzySubtypes) {
-                    globalThis.__DEV__ !== false && invariant2.warn(6, typename, supertype);
                   }
                   typenameSupertypeSet.add(supertype);
                 }
@@ -27240,44 +27186,7 @@ spurious results.`);
       map.delete(name);
     }
   }
-  function warnAboutDataLoss(existingRef, incomingObj, storeFieldName, store) {
-    var getChild = function(objOrRef) {
-      var child = store.getFieldValue(objOrRef, storeFieldName);
-      return typeof child === "object" && child;
-    };
-    var existing = getChild(existingRef);
-    if (!existing)
-      return;
-    var incoming = getChild(incomingObj);
-    if (!incoming)
-      return;
-    if (isReference(existing))
-      return;
-    if (equal(existing, incoming))
-      return;
-    if (Object.keys(existing).every(function(key) {
-      return store.getFieldValue(incoming, key) !== void 0;
-    })) {
-      return;
-    }
-    var parentType = store.getFieldValue(existingRef, "__typename") || store.getFieldValue(incomingObj, "__typename");
-    var fieldName = fieldNameFromStoreName(storeFieldName);
-    var typeDotName = "".concat(parentType, ".").concat(fieldName);
-    if (warnings.has(typeDotName))
-      return;
-    warnings.add(typeDotName);
-    var childTypenames = [];
-    if (!isArray(existing) && !isArray(incoming)) {
-      [existing, incoming].forEach(function(child) {
-        var typename = store.getFieldValue(child, "__typename");
-        if (typeof typename === "string" && !childTypenames.includes(typename)) {
-          childTypenames.push(typename);
-        }
-      });
-    }
-    globalThis.__DEV__ !== false && invariant2.warn(14, fieldName, parentType, childTypenames.length ? "either ensure all objects of type " + childTypenames.join(" and ") + " have an ID or a custom merge function, or " : "", typeDotName, existing, incoming);
-  }
-  var StoreWriter, emptyMergeTreePool, warnings;
+  var StoreWriter, emptyMergeTreePool;
   var init_writeToStore = __esm({
     "node_modules/@apollo/client/cache/inmemory/writeToStore.js"() {
       init_tslib_es6();
@@ -27325,7 +27234,7 @@ spurious results.`);
               }
               storeObject = applied;
             }
-            if (globalThis.__DEV__ !== false && !context.overwrite) {
+            if (false) {
               var fieldsWithSelectionSets_1 = /* @__PURE__ */ Object.create(null);
               fieldNodeSet.forEach(function(field) {
                 if (field.selectionSet) {
@@ -27418,11 +27327,7 @@ spurious results.`);
                 maybeRecycleChildMergeTree(mergeTree, storeFieldName);
               }
               incoming = context2.merge(incoming, (_a3 = {}, _a3[storeFieldName] = incomingValue, _a3));
-            } else if (globalThis.__DEV__ !== false && !context2.clientOnly && !context2.deferred && !addTypenameToDocument.added(field) && // If the field has a read function, it may be a synthetic field or
-            // provide a default value, so its absence from the written data should
-            // not be cause for alarm.
-            !policies.getReadFunction(typename, field.name.value)) {
-              globalThis.__DEV__ !== false && invariant2.error(12, resultKeyNameFromField(field), result2);
+            } else if (false) {
             }
           });
           try {
@@ -27474,7 +27379,7 @@ spurious results.`);
         StoreWriter2.prototype.processFieldValue = function(value, field, context, mergeTree) {
           var _this = this;
           if (!field.selectionSet || value === null) {
-            return globalThis.__DEV__ !== false ? cloneDeep(value) : value;
+            return false ? cloneDeep(value) : value;
           }
           if (isArray(value)) {
             return value.map(function(item, i) {
@@ -27605,7 +27510,6 @@ spurious results.`);
         return StoreWriter2;
       }();
       emptyMergeTreePool = [];
-      warnings = /* @__PURE__ */ new Set();
     }
   });
 
@@ -27787,7 +27691,6 @@ spurious results.`);
           try {
             return this.policies.identify(object)[0];
           } catch (e) {
-            globalThis.__DEV__ !== false && invariant2.warn(e);
           }
         };
         InMemoryCache2.prototype.evict = function(options) {
@@ -28064,12 +27967,6 @@ spurious results.`);
     return obsQuery.reobserve();
   }
   function defaultSubscriptionObserverErrorCallback(error) {
-    globalThis.__DEV__ !== false && invariant2.error(23, error.message, error.stack);
-  }
-  function logMissingFieldErrors(missing) {
-    if (globalThis.__DEV__ !== false && missing) {
-      globalThis.__DEV__ !== false && invariant2.debug(24, missing);
-    }
   }
   function skipCacheDataFor(fetchPolicy) {
     return fetchPolicy === "network-only" || fetchPolicy === "no-cache" || fetchPolicy === "standby";
@@ -28213,7 +28110,7 @@ spurious results.`);
             } else {
               result2.partial = true;
             }
-            if (globalThis.__DEV__ !== false && !diff.complete && !this.options.partialRefetch && !result2.loading && !result2.data && !result2.error) {
+            if (false) {
               logMissingFieldErrors(diff.missing);
             }
           }
@@ -28262,17 +28159,12 @@ spurious results.`);
           } else {
             reobserveOptions.fetchPolicy = "network-only";
           }
-          if (globalThis.__DEV__ !== false && variables && hasOwnProperty8.call(variables, "variables")) {
+          if (false) {
             var queryDef = getQueryDefinition(this.query);
             var vars = queryDef.variableDefinitions;
             if (!vars || !vars.some(function(v) {
               return v.variable.name.value === "variables";
             })) {
-              globalThis.__DEV__ !== false && invariant2.warn(
-                20,
-                variables,
-                ((_a2 = queryDef.name) === null || _a2 === void 0 ? void 0 : _a2.value) || queryDef
-              );
             }
           }
           if (variables && !equal(this.options.variables, variables)) {
@@ -28364,7 +28256,6 @@ spurious results.`);
                 options.onError(err);
                 return;
               }
-              globalThis.__DEV__ !== false && invariant2.error(21, err);
             }
           });
           this.subscriptions.add(subscription);
@@ -29606,7 +29497,6 @@ spurious results.`);
             try {
               _this.markMutationResult(__assign(__assign({}, mutation), { result: { data } }), cache);
             } catch (error) {
-              globalThis.__DEV__ !== false && invariant2.error(error);
             }
           }, mutation.mutationId);
         };
@@ -29797,10 +29687,9 @@ spurious results.`);
               queries.set(queryId, oq);
             });
           }
-          if (globalThis.__DEV__ !== false && queryNamesAndDocs.size) {
+          if (false) {
             queryNamesAndDocs.forEach(function(included, nameOrDoc) {
               if (!included) {
-                globalThis.__DEV__ !== false && invariant2.warn(typeof nameOrDoc === "string" ? 33 : 34, nameOrDoc);
               }
             });
           }
@@ -30172,7 +30061,7 @@ spurious results.`);
               networkStatus2 = queryInfo.networkStatus || NetworkStatus.loading;
             }
             var data = diff2.result;
-            if (globalThis.__DEV__ !== false && !returnPartialData && !equal(data, {})) {
+            if (false) {
               logMissingFieldErrors(diff2.missing);
             }
             var fromData = function(data2) {
@@ -30301,7 +30190,7 @@ spurious results.`);
           if (!options.cache) {
             throw newInvariantError(15);
           }
-          var uri = options.uri, credentials = options.credentials, headers = options.headers, cache = options.cache, documentTransform = options.documentTransform, _a2 = options.ssrMode, ssrMode = _a2 === void 0 ? false : _a2, _b = options.ssrForceFetchDelay, ssrForceFetchDelay = _b === void 0 ? 0 : _b, _c = options.connectToDevTools, connectToDevTools = _c === void 0 ? typeof window === "object" && !window.__APOLLO_CLIENT__ && globalThis.__DEV__ !== false : _c, _d = options.queryDeduplication, queryDeduplication = _d === void 0 ? true : _d, defaultOptions2 = options.defaultOptions, _e = options.assumeImmutableResults, assumeImmutableResults = _e === void 0 ? cache.assumeImmutableResults : _e, resolvers = options.resolvers, typeDefs = options.typeDefs, fragmentMatcher = options.fragmentMatcher, clientAwarenessName = options.name, clientAwarenessVersion = options.version;
+          var uri = options.uri, credentials = options.credentials, headers = options.headers, cache = options.cache, documentTransform = options.documentTransform, _a2 = options.ssrMode, ssrMode = _a2 === void 0 ? false : _a2, _b = options.ssrForceFetchDelay, ssrForceFetchDelay = _b === void 0 ? 0 : _b, _c = options.connectToDevTools, connectToDevTools = _c === void 0 ? typeof window === "object" && !window.__APOLLO_CLIENT__ && false : _c, _d = options.queryDeduplication, queryDeduplication = _d === void 0 ? true : _d, defaultOptions2 = options.defaultOptions, _e = options.assumeImmutableResults, assumeImmutableResults = _e === void 0 ? cache.assumeImmutableResults : _e, resolvers = options.resolvers, typeDefs = options.typeDefs, fragmentMatcher = options.fragmentMatcher, clientAwarenessName = options.name, clientAwarenessVersion = options.version;
           var link = options.link;
           if (!link) {
             link = uri ? new HttpLink({ uri, credentials, headers }) : ApolloLink.empty();
@@ -30365,7 +30254,7 @@ spurious results.`);
             (windowWithDevTools[devtoolsSymbol] = windowWithDevTools[devtoolsSymbol] || []).push(this);
             windowWithDevTools.__APOLLO_CLIENT__ = this;
           }
-          if (!hasSuggestedDevtools && globalThis.__DEV__ !== false) {
+          if (!hasSuggestedDevtools && false) {
             hasSuggestedDevtools = true;
             setTimeout(function() {
               if (typeof window !== "undefined" && window.document && window.top === window.self && !window.__APOLLO_DEVTOOLS_GLOBAL_HOOK__) {
@@ -30380,7 +30269,6 @@ spurious results.`);
                   }
                 }
                 if (url) {
-                  globalThis.__DEV__ !== false && invariant2.log("Download the Apollo DevTools for a better development experience: %s", url);
                 }
               }
             }, 1e4);
@@ -30520,7 +30408,6 @@ spurious results.`);
           result2.queries = queries;
           result2.results = results;
           result2.catch(function(error) {
-            globalThis.__DEV__ !== false && invariant2.debug(17, error);
           });
           return result2;
         };
@@ -30713,7 +30600,7 @@ spurious results.`);
       init_core();
       init_http();
       init_invariant();
-      setVerbosity(globalThis.__DEV__ !== false ? "log" : "silent");
+      setVerbosity(false ? "log" : "silent");
     }
   });
 
@@ -32614,7 +32501,6 @@ spurious results.`);
           name: "General customer info error",
           category: COMMERCE_ERROR_CATEGORY.GENERAL,
           copy: "There was an error processing your customer info. Please try again, or contact us if you continue to have problems.",
-          // @ts-expect-error - TS2322 - Type '{ id: string; name: string; category: { readonly id: "GENERAL"; readonly label: "General Errors"; }; copy: string; path: string[]; }' is not assignable to type 'ErrorType'.
           path: ["data", "commerce", INFO_ERR]
         },
         SHIPPING: {
@@ -32622,7 +32508,6 @@ spurious results.`);
           category: COMMERCE_ERROR_CATEGORY.GENERAL,
           name: "Shipping not available",
           copy: "Sorry. We can\u2019t ship your order to the address provided.",
-          // @ts-expect-error - TS2322 - Type '{ id: string; category: { readonly id: "GENERAL"; readonly label: "General Errors"; }; name: string; copy: string; path: string[]; }' is not assignable to type 'ErrorType'.
           path: ["data", "commerce", SHIPPING_ERR]
         },
         EXTRAS: {
@@ -32630,7 +32515,6 @@ spurious results.`);
           category: COMMERCE_ERROR_CATEGORY.GENERAL,
           name: "Merchant setting changed",
           copy: "A merchant setting has changed that impacts your cart. Please refresh and try again.",
-          // @ts-expect-error - TS2322 - Type '{ id: string; category: { readonly id: "GENERAL"; readonly label: "General Errors"; }; name: string; copy: string; path: string[]; requiresRefresh: true; }' is not assignable to type 'ErrorType'.
           path: ["data", "commerce", ORDER_EXTRAS_ERR],
           requiresRefresh: true
         },
@@ -32639,7 +32523,6 @@ spurious results.`);
           category: COMMERCE_ERROR_CATEGORY.PRODUCT,
           name: "Product price changed",
           copy: "The prices of one or more items in your cart have changed. Please refresh this page and try again.",
-          // @ts-expect-error - TS2322 - Type '{ id: string; category: { readonly id: "PRODUCT"; readonly label: "Product Errors"; }; name: string; copy: string; path: string[]; requiresRefresh: true; }' is not assignable to type 'ErrorType'.
           path: ["data", "commerce", PRICING_ERR],
           requiresRefresh: true
         },
@@ -32648,7 +32531,6 @@ spurious results.`);
           category: COMMERCE_ERROR_CATEGORY.PRODUCT,
           name: "Product removed",
           copy: "One or more of the products in your cart have been removed. Please refresh the page and try again.",
-          // @ts-expect-error - TS2322 - Type '{ id: string; category: { readonly id: "PRODUCT"; readonly label: "Product Errors"; }; name: string; copy: string; path: string[]; requiresRefresh: true; }' is not assignable to type 'ErrorType'.
           path: ["data", "commerce", PRODUCT_ERR],
           requiresRefresh: true
         },
@@ -32657,7 +32539,6 @@ spurious results.`);
           category: COMMERCE_ERROR_CATEGORY.BILLING,
           name: "General payment error",
           copy: "There was an error processing your payment. Please try again, or contact us if you continue to have problems.",
-          // @ts-expect-error - TS2322 - Type '{ id: string; category: { readonly id: "BILLING"; readonly label: "Billing Errors"; }; name: string; copy: string; path: string[]; }' is not assignable to type 'ErrorType'.
           path: ["data", "commerce", PAYMENT_ERR]
         },
         BILLING: {
@@ -32665,7 +32546,6 @@ spurious results.`);
           category: COMMERCE_ERROR_CATEGORY.BILLING,
           name: "Card declined",
           copy: "Your payment could not be completed with the payment information provided. Please make sure that your card and billing address information is correct, or try a different payment card, to complete this order. Contact us if you continue to have problems.",
-          // @ts-expect-error - TS2322 - Type '{ id: string; category: { readonly id: "BILLING"; readonly label: "Billing Errors"; }; name: string; copy: string; path: string[]; }' is not assignable to type 'ErrorType'.
           path: ["data", "commerce", BILLING_ERR]
         },
         MINIMUM: {
@@ -32673,7 +32553,6 @@ spurious results.`);
           category: COMMERCE_ERROR_CATEGORY.BILLING,
           name: "Order minimum not met",
           copy: "The order minimum was not met. Add more items to your cart to continue.",
-          // @ts-expect-error - TS2322 - Type '{ id: string; category: { readonly id: "BILLING"; readonly label: "Billing Errors"; }; name: string; copy: string; path: string[]; note: { copy: string; cta: { copy: string; link: string; }; }; }' is not assignable to type 'ErrorType'.
           path: ["data", "commerce", ORDER_MIN_ERR],
           note: {
             copy: "You can customize this message with the exact minimum based on your Stripe account's settlement currency.",
@@ -32688,7 +32567,6 @@ spurious results.`);
           category: COMMERCE_ERROR_CATEGORY.DISCOUNT,
           name: "Invalid discount error",
           copy: "This discount is invalid.",
-          // @ts-expect-error - TS2322 - Type '{ id: string; category: { readonly id: "DISCOUNT"; readonly label: "Discount Errors"; }; name: string; copy: string; path: string[]; }' is not assignable to type 'ErrorType'.
           path: ["data", "commerce", INVALID_DISCOUNT_ERR]
         },
         EXPIRED_DISCOUNT: {
@@ -32696,7 +32574,6 @@ spurious results.`);
           category: COMMERCE_ERROR_CATEGORY.DISCOUNT,
           name: "Discount expired",
           copy: "This discount is no longer available.",
-          // @ts-expect-error - TS2322 - Type '{ id: string; category: { readonly id: "DISCOUNT"; readonly label: "Discount Errors"; }; name: string; copy: string; path: string[]; }' is not assignable to type 'ErrorType'.
           path: ["data", "commerce", EXPIRED_DISCOUNT_ERR]
         },
         USAGE_REACHED_DISCOUNT: {
@@ -32704,7 +32581,6 @@ spurious results.`);
           category: COMMERCE_ERROR_CATEGORY.DISCOUNT,
           name: "Discount usage limit reached",
           copy: "This discount is no longer available.",
-          // @ts-expect-error - TS2322 - Type '{ id: string; category: { readonly id: "DISCOUNT"; readonly label: "Discount Errors"; }; name: string; copy: string; path: string[]; }' is not assignable to type 'ErrorType'.
           path: ["data", "commerce", USAGE_REACHED_DISCOUNT_ERR]
         },
         REQUIREMENTS_NOT_MET_DISCOUNT: {
@@ -32712,7 +32588,6 @@ spurious results.`);
           category: COMMERCE_ERROR_CATEGORY.DISCOUNT,
           name: "Discount requirements not met",
           copy: "Your order does not meet the requirements for this discount.",
-          // @ts-expect-error - TS2322 - Type '{ id: string; category: { readonly id: "DISCOUNT"; readonly label: "Discount Errors"; }; name: string; copy: string; path: string[]; }' is not assignable to type 'ErrorType'.
           path: ["data", "commerce", REQUIREMENTS_NOT_MET_DISCOUNT_ERR]
         }
       };
@@ -32833,32 +32708,18 @@ spurious results.`);
       STRIPE_ECOMMERCE_KEY = "data-wf-ecomm-key";
       STRIPE_ECOMMERCE_ACCOUNT_ID = "data-wf-ecomm-acct-id";
       COMMERCE_DEFAULT_COPY = {
-        // @ts-expect-error - TS18048 - 'CHECKOUT_ERRORS.INFO' is possibly 'undefined'.
         INFO_ERROR: CHECKOUT_ERRORS.INFO.copy,
-        // @ts-expect-error - TS18048 - 'CHECKOUT_ERRORS.SHIPPING' is possibly 'undefined'.
         SHIPPING_ERROR: CHECKOUT_ERRORS.SHIPPING.copy,
-        // @ts-expect-error - TS18048 - 'CHECKOUT_ERRORS.EXTRAS' is possibly 'undefined'.
         ORDER_EXTRAS_ERROR: CHECKOUT_ERRORS.EXTRAS.copy,
-        // @ts-expect-error - TS18048 - 'CHECKOUT_ERRORS.PRICING' is possibly 'undefined'.
         PRICING_ERROR: CHECKOUT_ERRORS.PRICING.copy,
-        // @ts-expect-error - TS18048 - 'CHECKOUT_ERRORS.PRODUCT' is possibly 'undefined'.
         PRODUCT_ERROR: CHECKOUT_ERRORS.PRODUCT.copy,
-        // @ts-expect-error - TS18048 - 'CHECKOUT_ERRORS.PAYMENT' is possibly 'undefined'.
         PAYMENT_ERROR: CHECKOUT_ERRORS.PAYMENT.copy,
-        // @ts-expect-error - TS18048 - 'CHECKOUT_ERRORS.BILLING' is possibly 'undefined'.
         BILLING_ERROR: CHECKOUT_ERRORS.BILLING.copy,
-        // @ts-expect-error - TS18048 - 'CHECKOUT_ERRORS.MINIMUM' is possibly 'undefined'.
         ORDER_MINIMUM_ERROR: CHECKOUT_ERRORS.MINIMUM.copy,
-        // @ts-expect-error - TS18048 - 'CHECKOUT_ERRORS.INVALID_DISCOUNT' is possibly 'undefined'.
         INVALID_DISCOUNT_ERROR: CHECKOUT_ERRORS.INVALID_DISCOUNT.copy,
-        // @ts-expect-error - TS18048 - 'CHECKOUT_ERRORS.EXPIRED_DISCOUNT' is possibly 'undefined'.
         EXPIRED_DISCOUNT_ERROR: CHECKOUT_ERRORS.EXPIRED_DISCOUNT.copy,
-        // @ts-expect-error - TS18048 - 'CHECKOUT_ERRORS.USAGE_REACHED_DISCOUNT' is possibly 'undefined'.
         USAGE_REACHED_DISCOUNT_ERROR: CHECKOUT_ERRORS.USAGE_REACHED_DISCOUNT.copy,
-        REQUIREMENTS_NOT_MET_DISCOUNT_ERROR: (
-          // @ts-expect-error - TS18048 - 'CHECKOUT_ERRORS.REQUIREMENTS_NOT_MET_DISCOUNT' is possibly 'undefined'.
-          CHECKOUT_ERRORS.REQUIREMENTS_NOT_MET_DISCOUNT.copy
-        ),
+        REQUIREMENTS_NOT_MET_DISCOUNT_ERROR: CHECKOUT_ERRORS.REQUIREMENTS_NOT_MET_DISCOUNT.copy,
         COMMERCE_ADD_TO_CART_BUTTON_DEFAULT: "Add to Cart",
         COMMERCE_ADD_TO_CART_BUTTON_WAITING: "Adding to cart...",
         COMMERCE_BUY_NOW_BUTTON_DEFAULT: "Buy now",
@@ -48434,7 +48295,10 @@ spurious results.`);
           return;
         }
         const errorType = getErrorType2(error);
-        const errorData = CHECKOUT_ERRORS[errorType.toUpperCase().replace(/\W/g, "_")] || {};
+        const errorData = (
+          // @ts-expect-error Element implicitly has an 'any' type because expression of type 'string' can't be used to index type '{...}'
+          CHECKOUT_ERRORS[errorType.toUpperCase().replace(/\W/g, "_")] || {}
+        );
         const defaultErrorMessage = errorData.copy;
         const errorMessage = errorText.getAttribute(getCheckoutErrorMessageForType(errorType)) || defaultErrorMessage;
         errorText.textContent = errorMessage;

@@ -3,7 +3,7 @@ backend:
   accept_roles:
     - admin
     - editor
-  branch: main
+  branch: master
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -1162,6 +1162,10 @@ collections:
           - hint: 'Original text: Cookies Settings, key: 243e72d4'
             label: Text
             name: 243e72d4
+            widget: string
+          - hint: 'Original text: Refund Policy, key: -234a8d26'
+            label: Text
+            name: '-234a8d26'
             widget: string
           - hint: >-
               Original text: Lorem ipsum dolor sit amet, consectetur adipiscing
@@ -4372,6 +4376,13 @@ collections:
               key: -db91f10
             label: Link
             name: '-db91f10'
+            widget: string
+          - hint: >-
+              Original link:
+              https://drive.google.com/file/d/11dP99N2oLQ8Jk0O4IgbXdiq7wxQZLIGb/view?usp=sharing,
+              key: -705e712d
+            label: Link
+            name: '-705e712d'
             widget: string
           - hint: 'Original link: mailto:sanfrancisco@dev.com, key: -f094850'
             label: Link

@@ -165,12 +165,12 @@
                 <div class="mg-bottom-53px">
                   <div class="w-layout-grid grid-2-columns team">
                     <div class="inner-container _135px">
-                      <div class="image-wrapper border-radius-6px"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;135px&quot;}]" src="{{ images.0.url }}" class="image cover"></div>
+                      <div class="image-wrapper border-radius-6px"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;135px&quot;}]" src="{{ f_team-member-portrait-picture.url }}" class="image cover"></div>
                     </div>
                     <div id="w-node-_3e2dd486-aec3-ed77-19e9-64c6c263c23d-a94a139f" class="flex-horizontal team">
                       <div class="mg-right-16px mg-right-0px-mbl mg-bottom-20px-mbl">
-                        <h1 class="display-4 mg-bottom-6px"></h1>
-                        <div class="text-400 medium color-neutral-400"></div>
+                        <h1 class="display-4 mg-bottom-6px">{{ title }}</h1>
+                        <div class="text-400 medium color-neutral-400">{{ f_team-member-job-title }}</div>
                       </div>
                       <div class="w-layout-grid social-media-links-grid _28px team-page">
                         {%- if f_team-member-facebook-link -%}<a href="{{ f_team-member-facebook-link }}" class="social-media-link _28px w-inline-block">
@@ -190,10 +190,10 @@
                   <div class="mg-bottom-24px">
                     <div class="flex-horizontal children-wrap">
                       <h2 class="heading-h3-size mg-bottom-0">{{ texts.74843ad3 }}</h2>
-                      <h2 class="heading-h3-size mg-bottom-0"></h2>
+                      <h2 class="heading-h3-size mg-bottom-0">{{ title }}</h2>
                     </div>
                   </div>
-                  <div class="rich-text w-richtext"></div>
+                  <div class="rich-text w-richtext">{{ content | markdown }}</div>
                 </div>{%- endif -%}
               </div>
               <div data-w-id="d0692c2b-fd97-8b8a-2010-2b017e1102b4" style="opacity:0" class="position-absolute bg-square-default team-bg">
@@ -216,7 +216,7 @@
             <div class="w-layout-grid grid-2-columns title-and-button v2">
               <div id="w-node-_017eee7a-2e4f-62a3-feb1-2e4793f8eb31-a94a139f" class="flex-horizontal children-wrap">
                 <h2 id="w-node-_3820cdb1-aa15-b4a3-5354-f451b9f90ba1-a94a139f" class="heading-h2-size mg-bottom-0">{{ texts.30e1b7c9 }}</h2>
-                <h2 class="heading-h2-size mg-bottom-0"></h2>
+                <h2 class="heading-h2-size mg-bottom-0">{{ title }}</h2>
               </div>
               <a id="w-node-_3820cdb1-aa15-b4a3-5354-f451b9f90ba3-a94a139f" href="{{ links.55cb89fe }}" class="btn-secondary w-button">{{ texts.44a0769e }}</a>
             </div>
@@ -225,15 +225,15 @@
             {%- unless collection.length == 0 -%}<div role="list" class="grid-2-columns gap-48px w-dyn-items">
               {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                 <a href="{{ item.url }}" class="card link-card post-item w-inline-block">
-                  <div class="image-wrapper"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;90vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;46vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;45vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ images.0.url }}" class="image cover"></div>
+                  <div class="image-wrapper"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;90vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;46vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;45vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" class="image cover"></div>
                   <div class="card-post-content">
-                    <h3 class="heading-h3-size mg-bottom-16px"></h3>
-                    <p class="mg-bottom-0"></p>
+                    <h3 class="heading-h3-size mg-bottom-16px">{{ item.data.title }}</h3>
+                    <p class="mg-bottom-0">{{ item.data.f_blog-post-excerpt }}</p>
                     <div class="mg-top-auto">
                       <div class="divider _32px"></div>
                       <div class="w-layout-grid grid-2-columns card-post">
-                        <div id="w-node-_3820cdb1-aa15-b4a3-5354-f451b9f90bb1-a94a139f" class="badge-secondary small"></div>
-                        <div id="w-node-_3820cdb1-aa15-b4a3-5354-f451b9f90bb2-a94a139f" class="text-200 color-neutral-200"></div>
+                        {%- assign ref = item.data.f_blog-post-category | resolveReference -%}<div id="w-node-_3820cdb1-aa15-b4a3-5354-f451b9f90bb1-a94a139f" class="badge-secondary small">{{ ref.data.title }}</div>
+                        <div id="w-node-_3820cdb1-aa15-b4a3-5354-f451b9f90bb2-a94a139f" class="text-200 color-neutral-200">{{  item.data.f_updated-on | formatDate: "MMM d, yyyy" }}</div>
                       </div>
                     </div>
                   </div>
@@ -296,6 +296,9 @@
               <a href="{{ links.23 }}" class="w-inline-block">
                 <div class="link-11">{{ texts.243e72d4 }}</div>
               </a>
+              <a href="{{ links.-705e712d }}" class="w-inline-block">
+                <div class="link-11">{{ texts.-234a8d26 }}</div>
+              </a>
             </div>
           </div>
         </div>
@@ -330,4 +333,4 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
 
-<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}{%- include "partials/_snipcart-footer" -%}</body></html>
+<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.4/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script>{%- include "partials/_snipcart-footer" -%}</body></html>

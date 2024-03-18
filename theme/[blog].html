@@ -164,15 +164,15 @@
               <div class="text-center">
                 <div class="mg-bottom-24px">
                   <div data-w-id="855dc958-90b7-3e02-b516-173dc13e46c7" style="-webkit-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="flex-horizontal justify-center align-center">
-                    <div class="text-300 medium text-uppercase color-neutral-100"></div>
+                    {%- assign ref = f_blog-post-category | resolveReference -%}<div class="text-300 medium text-uppercase color-neutral-100">{{ ref.data.title }}</div>
                     {%- if f_blog-post-category -%}<div class="text-divider"></div>{%- endif -%}
-                    <div class="text-300 medium text-uppercase color-neutral-100"></div>
+                    <div class="text-300 medium text-uppercase color-neutral-100">{{  f_updated-on | formatDate: "MMM d, yyyy" }}</div>
                   </div>
                 </div>
-                <h1 data-w-id="66239862-f976-9aa5-4692-104b01ddc9f9" style="-webkit-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="display-2"></h1>
+                <h1 data-w-id="66239862-f976-9aa5-4692-104b01ddc9f9" style="-webkit-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="display-2">{{ title }}</h1>
                 <div data-w-id="80dc05b5-50cc-967d-4b2b-d2da8ad854c8" style="-webkit-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="inner-container _860px center">
                   <div class="inner-container _500px-mbl center">
-                    <p class="mg-bottom-0"></p>
+                    <p class="mg-bottom-0">{{ f_blog-post-shor-description-page }}</p>
                   </div>
                 </div>
               </div>
@@ -181,7 +181,7 @@
         </div>
         <div data-w-id="117abc47-b3f7-13d8-a884-7556464bee33" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="position-relative">
           <div class="position-relative z-index-1">
-            <div class="image-wrapper border-radius-24px"><img class="image cover" src="{{ images.0.url }}" alt="{{ images.0.alt | escape }}" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;94vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;95vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;1220px&quot;}]" style="opacity:0" data-w-id="66239862-f976-9aa5-4692-104b01ddc9ff"></div>
+            <div class="image-wrapper border-radius-24px"><img class="image cover" src="{{ f_blog-post-featured-image-photo.url }}" alt="{{ images.0.alt | escape }}" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;94vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;95vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;1220px&quot;}]" style="opacity:0" data-w-id="66239862-f976-9aa5-4692-104b01ddc9ff"></div>
           </div>
           <div data-w-id="49ca011f-9e9e-e58e-f992-f3e9ae7dc30d" style="opacity:0" class="position-absolute bg-circle-default post-bg">
             <div class="bg-circle-gradient">
@@ -194,7 +194,7 @@
     {%- if content -%}<section class="section pd-top-110px">
       <div class="container-default w-container">
         <div data-w-id="d364559a-e203-26f7-e49c-904189ad4522" style="-webkit-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 35px, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0" class="inner-container _866px center">
-          <div class="rich-text w-richtext"></div>
+          <div class="rich-text w-richtext">{{ content | markdown }}</div>
         </div>
       </div>
     </section>{%- endif -%}
@@ -214,15 +214,15 @@
             {%- unless collection.length == 0 -%}<div role="list" class="grid-2-columns gap-48px w-dyn-items">
               {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                 <a href="{{ item.url }}" class="card link-card post-item w-inline-block">
-                  <div class="image-wrapper"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;90vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;46vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;45vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ images.0.url }}" class="image cover"></div>
+                  <div class="image-wrapper"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;90vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;46vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;45vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" class="image cover"></div>
                   <div class="card-post-content">
-                    <h3 class="heading-h3-size mg-bottom-16px"></h3>
-                    <p class="mg-bottom-0"></p>
+                    <h3 class="heading-h3-size mg-bottom-16px">{{ item.data.title }}</h3>
+                    <p class="mg-bottom-0">{{ item.data.f_blog-post-excerpt }}</p>
                     <div class="mg-top-auto">
                       <div class="divider _32px"></div>
                       <div class="w-layout-grid grid-2-columns card-post">
-                        <div id="w-node-dbd75caa-8f7e-2b1c-c2d9-360b1ff95311-de4a1397" class="badge-secondary small"></div>
-                        <div id="w-node-dbd75caa-8f7e-2b1c-c2d9-360b1ff95312-de4a1397" class="text-200 color-neutral-200"></div>
+                        {%- assign ref = item.data.f_blog-post-category | resolveReference -%}<div id="w-node-dbd75caa-8f7e-2b1c-c2d9-360b1ff95311-de4a1397" class="badge-secondary small">{{ ref.data.title }}</div>
+                        <div id="w-node-dbd75caa-8f7e-2b1c-c2d9-360b1ff95312-de4a1397" class="text-200 color-neutral-200">{{  item.data.f_updated-on | formatDate: "MMM d, yyyy" }}</div>
                       </div>
                     </div>
                   </div>
@@ -285,6 +285,9 @@
               <a href="{{ links.23 }}" class="w-inline-block">
                 <div class="link-11">{{ texts.243e72d4 }}</div>
               </a>
+              <a href="{{ links.-705e712d }}" class="w-inline-block">
+                <div class="link-11">{{ texts.-234a8d26 }}</div>
+              </a>
             </div>
           </div>
         </div>
@@ -319,4 +322,4 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
 
-<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}{%- include "partials/_snipcart-footer" -%}</body></html>
+<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.4/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script>{%- include "partials/_snipcart-footer" -%}</body></html>
