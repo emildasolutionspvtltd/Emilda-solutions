@@ -3,7 +3,7 @@ backend:
   accept_roles:
     - admin
     - editor
-  branch: main
+  branch: master
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -1158,10 +1158,6 @@ collections:
           - hint: 'Original text: Terms of Service, key: -7fe2d65b'
             label: Text
             name: '-7fe2d65b'
-            widget: string
-          - hint: 'Original text: Cookies Settings, key: 243e72d4'
-            label: Text
-            name: 243e72d4
             widget: string
           - hint: 'Original text: Refund Policy, key: -234a8d26'
             label: Text
@@ -4233,6 +4229,459 @@ collections:
             label: Text
             name: '-75e1e035'
             widget: string
+          - hint: 'Original text: Refund , key: -5c135878'
+            label: Text
+            name: '-5c135878'
+            widget: string
+          - hint: 'Original text: Policy, key: -712d6eae'
+            label: Text
+            name: '-712d6eae'
+            widget: string
+          - hint: >-
+              Original text: At Emilda Solutions, we are committed to ensuring
+              the satisfaction of our clients. Our refundpolicy is designed to
+              offer peace of mind and demonstrate our confidence in the quality
+              ofour services., key: -789458b5
+            label: Text
+            name: '-789458b5'
+            widget: text
+          - hint: 'Original text: Eligibility for Refunds:, key: 75277709'
+            label: Text
+            name: '75277709'
+            widget: string
+          - hint: >-
+              Original text: Refunds are applicable only for services that have
+              not been commenced or for which work has not been initiated., key:
+              -86dd448
+            label: Text
+            name: '-86dd448'
+            widget: text
+          - hint: >-
+              Original text: Once a project has begun or any service has been
+              rendered, clients may be eligible for a partial refund, contingent
+              on the progress of the project and the discretion of Emilda
+              Solutions., key: 7dff71ef
+            label: Text
+            name: 7dff71ef
+            widget: text
+          - hint: 'Original text: Process for Requesting a Refund:, key: 5cd1b9be'
+            label: Text
+            name: 5cd1b9be
+            widget: string
+          - hint: >-
+              Original text: To request a refund, clients must contact Emilda
+              Solutions via email or phone,providing a detailed reason for the
+              request., key: 72dcc617
+            label: Text
+            name: 72dcc617
+            widget: text
+          - hint: >-
+              Original text: Requests must be made within 14 days of the service
+              purchase date., key: -5093d034
+            label: Text
+            name: '-5093d034'
+            widget: string
+          - hint: >-
+              Original text: Emilda Solutions will evaluate the request,
+              considering factors such as project progress, services delivered,
+              and reasons for dissatisfaction., key: 76d899a8
+            label: Text
+            name: 76d899a8
+            widget: text
+          - hint: 'Original text: Refund Decision:, key: 42233d36'
+            label: Text
+            name: 42233d36
+            widget: string
+          - hint: >-
+              Original text: After reviewing the refund request, Emilda
+              Solutions will make a decision at its discretion. This decision
+              will be communicated to the client, along with any conditions or
+              next steps., key: 38c0b095
+            label: Text
+            name: 38c0b095
+            widget: text
+          - hint: 'Original text: Refund Timing:, key: -7c9cff78'
+            label: Text
+            name: '-7c9cff78'
+            widget: string
+          - hint: >-
+              Original text: In cases where a refund is granted, Emilda
+              Solutions commits to refunding the entire amount within 7 to 14
+              business days via the original payment method., key: -2b8a638e
+            label: Text
+            name: '-2b8a638e'
+            widget: text
+          - hint: 'Original text: Refund Approval:, key: -45232c51'
+            label: Text
+            name: '-45232c51'
+            widget: string
+          - hint: >-
+              Original text: Approved refunds will be processed within 30 days
+              of the approval date. The refund will be made using the original
+              payment method., key: -62778add
+            label: Text
+            name: '-62778add'
+            widget: text
+          - hint: 'Original text: Contact Information:, key: 702618ce'
+            label: Text
+            name: 702618ce
+            widget: string
+          - hint: >-
+              Original text:  For any questions or to request a refund, please
+              contact our customer support team at the provided contact details
+              on our website, key: 1c7a931d
+            label: Text
+            name: 1c7a931d
+            widget: text
+          - hint: >-
+              Original text: This policy is subject to change at the discretion
+              of Emilda Solutions., key: 42897eb4
+            label: Text
+            name: 42897eb4
+            widget: string
+          - hint: 'Original text: Terms and , key: 35942042'
+            label: Text
+            name: '35942042'
+            widget: string
+          - hint: 'Original text: Conditions, key: 3f5612d8'
+            label: Text
+            name: 3f5612d8
+            widget: string
+          - hint: >-
+              Original text: Please review these Terms carefully before using
+              our services. By using Emilda Solutions Pvt Ltd's services,
+              available at , key: 6f4166af
+            label: Text
+            name: 6f4166af
+            widget: text
+          - hint: 'Original text: https://www.emildasolutions.com, key: 4535d49f'
+            label: Text
+            name: 4535d49f
+            widget: string
+          - hint: >-
+              Original text: , you agree to these Terms. If not, you must not
+              use our services., key: -4fe7d11c
+            label: Text
+            name: '-4fe7d11c'
+            widget: string
+          - hint: 'Original text: 1. Definitions:, key: -56e91003'
+            label: Text
+            name: '-56e91003'
+            widget: string
+          - hint: 'Original text: Affiliate:, key: -11aeff53'
+            label: Text
+            name: '-11aeff53'
+            widget: string
+          - hint: >-
+              Original text:  An entity with 50% or more control by shares or
+              interests., key: -62958978
+            label: Text
+            name: '-62958978'
+            widget: string
+          - hint: 'Original text: Service:, key: 560f7445'
+            label: Text
+            name: 560f7445
+            widget: string
+          - hint: >-
+              Original text:  The website and services provided by Emilda
+              Solutions Pvt Ltd., key: -78d3beaf
+            label: Text
+            name: '-78d3beaf'
+            widget: string
+          - hint: 'Original text: User:, key: 4e39daf'
+            label: Text
+            name: 4e39daf
+            widget: string
+          - hint: >-
+              Original text:  You, accessing or using the Service., key:
+              677cc3ec
+            label: Text
+            name: 677cc3ec
+            widget: string
+          - hint: 'Original text: 2. Use of Service:, key: 34abc951'
+            label: Text
+            name: 34abc951
+            widget: string
+          - hint: >-
+              Original text: You must be over 18 to use our Service., key:
+              -6d954c29
+            label: Text
+            name: '-6d954c29'
+            widget: string
+          - hint: >-
+              Original text: Your use signifies agreement to these Terms and our
+              Privacy Policy., key: 7fb4974b
+            label: Text
+            name: 7fb4974b
+            widget: string
+          - hint: >-
+              Original text: We may link to third-party sites, over which we
+              have no control., key: 66ab842f
+            label: Text
+            name: 66ab842f
+            widget: string
+          - hint: 'Original text: 3. Termination:, key: 7db0a37b'
+            label: Text
+            name: 7db0a37b
+            widget: string
+          - hint: >-
+              Original text: We may terminate your use of the Service for breach
+              of these Terms., key: -4c183ac2
+            label: Text
+            name: '-4c183ac2'
+            widget: string
+          - hint: 'Original text: 4. Liability:, key: 1cc36e53'
+            label: Text
+            name: 1cc36e53
+            widget: string
+          - hint: >-
+              Original text: Our total liability is limited to the amount paid
+              by you or $100 if you've made no payment., key: 32c25bfb
+            label: Text
+            name: 32c25bfb
+            widget: text
+          - hint: >-
+              Original text: We're not liable for indirect damages., key:
+              -2b45d163
+            label: Text
+            name: '-2b45d163'
+            widget: string
+          - hint: 'Original text: 5. Disclaimer:, key: 16fd7ad8'
+            label: Text
+            name: 16fd7ad8
+            widget: string
+          - hint: >-
+              Original text: The Service is provided "AS IS." We disclaim all
+              warranties to the extent permitted by law., key: 47f28eb9
+            label: Text
+            name: 47f28eb9
+            widget: text
+          - hint: 'Original text: 6. Governing Law:, key: -590979ef'
+            label: Text
+            name: '-590979ef'
+            widget: string
+          - hint: >-
+              Original text: Governed by the laws of Tamil Nadu, India., key:
+              -6e8c110
+            label: Text
+            name: '-6e8c110'
+            widget: string
+          - hint: 'Original text: 7. Dispute Resolution:, key: -63b20f57'
+            label: Text
+            name: '-63b20f57'
+            widget: string
+          - hint: >-
+              Original text: Contact us first to resolve any disputes., key:
+              -4faa295c
+            label: Text
+            name: '-4faa295c'
+            widget: string
+          - hint: 'Original text: 8. Changes to Terms:, key: -1d57daef'
+            label: Text
+            name: '-1d57daef'
+            widget: string
+          - hint: >-
+              Original text: We may update these Terms and will notify you of
+              significant changes., key: -77a82032
+            label: Text
+            name: '-77a82032'
+            widget: string
+          - hint: 'Original text: 9. Contact:, key: 76b3c4e5'
+            label: Text
+            name: 76b3c4e5
+            widget: string
+          - hint: 'Original text: Email: , key: 19673a2'
+            label: Text
+            name: 19673a2
+            widget: string
+          - hint: 'Original text: operations@emildasolutions.com, key: -680f272f'
+            label: Text
+            name: '-680f272f'
+            widget: string
+          - hint: >-
+              Original text: Visit: https://www.emildasolutions.com/contact,
+              key: -4647d001
+            label: Text
+            name: '-4647d001'
+            widget: string
+          - hint: 'Original text: Phone: +91 - 9442449431, key: -35258b6a'
+            label: Text
+            name: '-35258b6a'
+            widget: string
+          - hint: 'Original text: ‍, key: 200d'
+            label: Text
+            name: 200d
+            widget: string
+          - hint: >-
+              Original text: By using our Service, you consent to these terms.,
+              key: -1548c4ee
+            label: Text
+            name: '-1548c4ee'
+            widget: string
+          - hint: 'Original text: Privacy , key: -41424e48'
+            label: Text
+            name: '-41424e48'
+            widget: string
+          - hint: >-
+              Original text: This policy outlines how Emilda Solutions Pvt Ltd,
+              located in Tamil Nadu, India, collects, uses, and protects your
+              information when you use our services accessible via , key:
+              7133d507
+            label: Text
+            name: 7133d507
+            widget: text
+          - hint: >-
+              Original text: . By using our service, you consent to our data
+              practices as described herein., key: 6c0a16d2
+            label: Text
+            name: 6c0a16d2
+            widget: string
+          - hint: 'Original text: 1. Information We Collect:, key: -4e4264b5'
+            label: Text
+            name: '-4e4264b5'
+            widget: string
+          - hint: 'Original text: Personal Data: , key: 7a3b1230'
+            label: Text
+            name: 7a3b1230
+            widget: string
+          - hint: >-
+              Original text: Including but not limited to email, name, phone
+              number., key: -52be4ce4
+            label: Text
+            name: '-52be4ce4'
+            widget: string
+          - hint: 'Original text: Usage Data: , key: -45b68811'
+            label: Text
+            name: '-45b68811'
+            widget: string
+          - hint: >-
+              Original text: Automatically collected data about how the service
+              is accessed and used., key: 498fb2e2
+            label: Text
+            name: 498fb2e2
+            widget: string
+          - hint: 'Original text: Tracking & Cookies: , key: -76d1ad6e'
+            label: Text
+            name: '-76d1ad6e'
+            widget: string
+          - hint: >-
+              Original text: We use cookies and similar tracking technologies to
+              monitor our service and hold certain information., key: -7d3aa10b
+            label: Text
+            name: '-7d3aa10b'
+            widget: text
+          - hint: 'Original text: 2. Use of Your Data:, key: 2306c5af'
+            label: Text
+            name: 2306c5af
+            widget: string
+          - hint: >-
+              Original text: To provide and maintain our service; manage your
+              account., key: -7de6fd8f
+            label: Text
+            name: '-7de6fd8f'
+            widget: string
+          - hint: >-
+              Original text: For communication regarding updates, special
+              offers, and managing inquiries or requests., key: -6ad985f5
+            label: Text
+            name: '-6ad985f5'
+            widget: string
+          - hint: >-
+              Original text: For business transfers and improvements., key:
+              -1b8c0c99
+            label: Text
+            name: '-1b8c0c99'
+            widget: string
+          - hint: 'Original text: To comply with legal obligations., key: 2e612e9b'
+            label: Text
+            name: 2e612e9b
+            widget: string
+          - hint: 'Original text: 3. Sharing Your Personal Data:, key: 5e9ac9b4'
+            label: Text
+            name: 5e9ac9b4
+            widget: string
+          - hint: >-
+              Original text: With service providers, affiliates, business
+              partners, and other users as necessary., key: -189ece78
+            label: Text
+            name: '-189ece78'
+            widget: string
+          - hint: >-
+              Original text: For business transactions, legal requirements, and
+              law enforcement requests., key: 64ce5466
+            label: Text
+            name: 64ce5466
+            widget: string
+          - hint: 'Original text: 4. Data Retention & Transfer:, key: 25d66983'
+            label: Text
+            name: 25d66983
+            widget: string
+          - hint: >-
+              Original text: We retain data as long as necessary for service
+              provision, compliance, and resolving disputes., key: -1cb9f13b
+            label: Text
+            name: '-1cb9f13b'
+            widget: text
+          - hint: >-
+              Original text: Your data may be transferred across borders,
+              ensuring adequate data protection measures., key: 6593e54c
+            label: Text
+            name: 6593e54c
+            widget: string
+          - hint: 'Original text: 5. Your Data Rights:, key: -38f0584d'
+            label: Text
+            name: '-38f0584d'
+            widget: string
+          - hint: >-
+              Original text: You can delete or request deletion of your personal
+              data, subject to certain conditions., key: 3737c759
+            label: Text
+            name: 3737c759
+            widget: string
+          - hint: 'Original text: 6. Security:, key: 3aedb572'
+            label: Text
+            name: 3aedb572
+            widget: string
+          - hint: >-
+              Original text: We aim to protect your personal data but cannot
+              guarantee absolute security., key: -72029c5f
+            label: Text
+            name: '-72029c5f'
+            widget: string
+          - hint: 'Original text: 7. Children''s Privacy:, key: -29dc5c02'
+            label: Text
+            name: '-29dc5c02'
+            widget: string
+          - hint: >-
+              Original text: Our service is not intended for individuals under
+              13 years of age., key: f4a3866
+            label: Text
+            name: f4a3866
+            widget: string
+          - hint: 'Original text: 8. Third-party Links:, key: 8e2fe6b'
+            label: Text
+            name: 8e2fe6b
+            widget: string
+          - hint: >-
+              Original text: Our service may include links to third-party sites,
+              which we do not control., key: 3587c78
+            label: Text
+            name: 3587c78
+            widget: string
+          - hint: 'Original text: 9. Changes to This Policy:, key: 5363ffc3'
+            label: Text
+            name: 5363ffc3
+            widget: string
+          - hint: >-
+              Original text: We may update this policy and will notify you of
+              changes., key: -3e21d615
+            label: Text
+            name: '-3e21d615'
+            widget: string
+          - hint: 'Original text: 10. Contact Us:, key: -3be96f95'
+            label: Text
+            name: '-3be96f95'
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -4363,26 +4812,17 @@ collections:
             label: Link
             name: '-48d9964f'
             widget: string
-          - hint: >-
-              Original link:
-              https://www.freeprivacypolicy.com/live/b855217d-3347-41a6-a9e6-6a99fefb2ebf,
-              key: -42b71d4c
+          - hint: 'Original link: /privacy-policy/, key: -2f934417'
             label: Link
-            name: '-42b71d4c'
+            name: '-2f934417'
             widget: string
-          - hint: >-
-              Original link:
-              https://www.freeprivacypolicy.com/live/df21f4e8-9556-4cd8-8556-b68182699d02,
-              key: -db91f10
+          - hint: 'Original link: /terms-and-conditions/, key: -237f3f94'
             label: Link
-            name: '-db91f10'
+            name: '-237f3f94'
             widget: string
-          - hint: >-
-              Original link:
-              https://drive.google.com/file/d/11dP99N2oLQ8Jk0O4IgbXdiq7wxQZLIGb/view?usp=sharing,
-              key: -705e712d
+          - hint: 'Original link: /refund-policy/, key: 58314dd7'
             label: Link
-            name: '-705e712d'
+            name: 58314dd7
             widget: string
           - hint: 'Original link: mailto:sanfrancisco@dev.com, key: -f094850'
             label: Link
@@ -4763,6 +5203,16 @@ collections:
           - hint: 'Original link: https://www.apple.com/apple-music/, key: 321e66a5'
             label: Link
             name: 321e66a5
+            widget: string
+          - hint: 'Original link: https://www.emildasolutions.com/, key: 6184bf70'
+            label: Link
+            name: 6184bf70
+            widget: string
+          - hint: >-
+              Original link: http://operations@emildasolutions.com, key:
+              -ca5e89d
+            label: Link
+            name: '-ca5e89d'
             widget: string
       - label: Images
         name: images
