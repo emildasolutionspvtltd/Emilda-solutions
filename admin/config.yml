@@ -1967,6 +1967,27 @@ collections:
             label: Text
             name: '-4fe5f31c'
             widget: text
+          - hint: 'Original text: Hosur Head Office , IN, key: -5499064c'
+            label: Text
+            name: '-5499064c'
+            widget: string
+          - hint: >-
+              Original text: 5/311-4, 10th Cross, Kamaraj Nagar, Chinna
+              Elasagiri, HOSUR - 635 126, key: -2bfd831e
+            label: Text
+            name: '-2bfd831e'
+            widget: string
+          - hint: 'Original text: Hosur Operations, IN, key: -6438e324'
+            label: Text
+            name: '-6438e324'
+            widget: string
+          - hint: >-
+              Original text: Fort Forge, Cabin CO2, near TVS Academy, Sipcot
+              Phase II Industrial Complex, Sipcot Ph 2, Hosur, Tamil Nadu
+              635109, key: -316916c8
+            label: Text
+            name: '-316916c8'
+            widget: text
           - hint: 'Original text: More articles, key: 18f9688'
             label: Text
             name: 18f9688
@@ -4880,21 +4901,18 @@ collections:
             label: Link
             name: 174d35d
             widget: string
-          - hint: 'Original link: mailto:sa@emildasolutions.com, key: 67fba03b'
+          - hint: >-
+              Original link:
+              https://www.google.com/maps/search/5%2F311-4,+10th+Cross,+Kamaraj+Nagar,+Chinna+Elasagiri,+HOSUR+-+635+126/@12.7575788,77.8150842,21z/data=!4m6!2m5!3m4!2s12.757608,+77.815073!4m2!1d77.8150734!2d12.7576079?entry=ttu,
+              key: -7e797749
             label: Link
-            name: 67fba03b
+            name: '-7e797749'
             widget: string
-          - hint: 'Original link: mailto:uae@emildasolutions.com, key: 182ef6b6'
+          - hint: >-
+              Original link: https://maps.app.goo.gl/7hdk1eeJLHt643Zx8, key:
+              -39dfbfc2
             label: Link
-            name: 182ef6b6
-            widget: string
-          - hint: 'Original link: mailto:kl@emildasolutions.com, key: -419fa832'
-            label: Link
-            name: '-419fa832'
-            widget: string
-          - hint: 'Original link: mailto:hsr@emildasolutions.com, key: 6cd5c524'
-            label: Link
-            name: 6cd5c524
+            name: '-39dfbfc2'
             widget: string
           - hint: 'Original link: /checkout/, key: -eb5dfa6'
             label: Link
@@ -5224,6 +5242,19 @@ collections:
             default: Images
           - label: Image
             name: 737a60a0
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: i344a81a4
             widget: object
             fields:
               - name: url
