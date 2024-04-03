@@ -1,35 +1,27 @@
 ---
 f_project-completion-date: '2022-10-20T00:00:00.000Z'
 f_project-results: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim
-  urna adipiscing praesent velit viverra sit semper lorem eu cursus vel
-  hendrerit elementum morbi curabitur etiam nibh justo, lorem aliquet donec sed
-  sit mi dignissim at ante massa mattis.
+  At Emilda Solutions, we spearheaded a transformative optimization of
+  Facebook's website, leveraging advanced caching, code minification, and
+  innovative technologies like React and GraphQL. Our strategic enhancements,
+  including adaptive image loading and the use of Content Delivery Networks
+  (CDNs), culminated in a staggering 78% improvement in website speed.
 
 
-  Massa massa ultricies mi quis hendrerit dolor magna eget est eget dolor morbi
-  non arcu risus quis ut lectus arcu bibendum at varius vel pharetra vel. Id
-  velit ut tortor pretium viverra suspendisse potenti nullam. Pellentesque
-  habitant morbi tristique senectus et netus dolor sit amet consectur.
+  This achievement not only significantly elevates user experience but also sets
+  a new industry standard for web performance excellence, all accomplished
+  within a remarkably tight timeline.
 f_project-execution: >-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim
-  urna adipiscing praesent velit viverra sit semper lorem eu cursus vel
-  hendrerit elementum morbi curabitur etiam nibh justo, lorem aliquet donec sed
-  sit mi dignissim at ante massa mattis.
+  At Emilda Solutions, we spearheaded a transformative optimization of
+  Facebook's website, leveraging advanced caching, code minification, and
+  innovative technologies like React and GraphQL. Our strategic enhancements,
+  including adaptive image loading and the use of Content Delivery Networks
+  (CDNs), culminated in a staggering 78% improvement in website speed.
 
 
-  Turpis in eu mi bibendum neque egestas viverra aliquet eget sit amet tellus
-  cras adipiscing neque gravida in fermentum et mauris pharetra et ultrices
-  neque ornare aenean euismod elementum nisi elit duis tristique sollicitudin.
-
-
-  *   Neque sodales ut etiam sit amet nisl purus non tellus orcia drakdong dol
-
-  *   Adipiscing elit ut aliquam purus sit amet viverr
-
-  *   Mauris commodo quis imperdiet massa tincidunt nunc pulv dolor sit amet
-
-  *   Adipiscing elit ut aliquam purus sit ame dolor sit emat conse
+  This achievement not only significantly elevates user experience but also sets
+  a new industry standard for web performance excellence, all accomplished
+  within a remarkably tight timeline.
 f_project-platform: Web and Mobile
 title: How we improved Facebook’s new website speed by 78%
 f_project-services-rendered: Frontend Development
@@ -47,13 +39,13 @@ f_project-results-featured-image:
   url: >-
     https://uploads-ssl.webflow.com/644c29ee1dd8d0985f4a1348/644c29ee1dd8d078404a14d1_image-results-project-dev-webflow-template.png
   alt: null
-updated-on: '2022-03-26T17:50:50.713Z'
+updated-on: '2024-04-03T09:40:03.639Z'
 created-on: '2022-02-25T02:16:36.906Z'
-published-on: '2023-04-28T20:34:00.007Z'
+published-on: '2024-04-03T10:11:40.929Z'
 layout: '[project].html'
 tags: project
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit lobortis arcu enim urna adipiscing praesent velit viverra sit semper lorem eu cursus vel hendrerit elementum morbi curabitur etiam nibh justo, lorem aliquet donec sed sit mi dignissim at ante massa mattis.
+At Emilda Solutions, we spearheaded a transformative optimization of Facebook's website, leveraging advanced caching, code minification, and innovative technologies like React and GraphQL. Our strategic enhancements, including adaptive image loading and the use of Content Delivery Networks (CDNs), culminated in a staggering 78% improvement in website speed.
 
-Massa massa ultricies mi quis hendrerit dolor magna eget est eget dolor morbi non arcu risus quis ut lectus arcu bibendum at varius vel pharetra vel. Id velit ut tortor pretium viverra suspendisse potenti nullam. Pellentesque habitant morbi tristique senectus et netus dolor sit amet consectur.
+This achievement not only significantly elevates user experience but also sets a new industry standard for web performance excellence, all accomplished within a remarkably tight timeline.
