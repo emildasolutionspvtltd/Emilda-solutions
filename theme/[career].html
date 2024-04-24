@@ -206,7 +206,7 @@
                 </div>{%- endif -%}
                 <div id="w-node-_9cb3d64c-437e-fe45-9192-e86f1e25a010-3a4a1399" class="flex-horizontal children-wrap">
                   <div>{{ texts.-5478dc1a }}</div>
-                  <div class="">{{  f_updated-on | formatDate: "MMM d, yyyy" }}</div>
+                  <div class="">{{  updated-on | formatDate: "MMM d, yyyy" }}</div>
                 </div>
               </div>
               <div data-w-id="8f967312-5fca-1c5a-44ca-30c557566eb9" style="opacity:0" class="position-absolute bg-square-default career-bg">
@@ -344,4 +344,4 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
 
-<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}{%- include "partials/_snipcart-footer" -%}</body></html>
+<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.4/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script>{%- include "partials/_snipcart-footer" -%}</body></html>

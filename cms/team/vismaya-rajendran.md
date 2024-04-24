@@ -2,19 +2,20 @@
 f_team-member-linkedin-link: https://github.com/
 f_team-member-twitter-link: https://twitter.com/
 f_team-member-facebook-link: https://www.facebook.com/
-f_team-member-job-title: VP of Backend Development
-title: Rebeca Smith
+f_team-member-job-title: UI/UX Designer
+title: Vismaya Rajendran
 f_team-member-excerpt: >-
   Lorem ipsum dolor sit amet consecte adipiscing elit amet hendrerit pretium
   nulla sed enim iaculis mi.
-slug: rebeca-smith
+slug: vismaya-rajendran
 f_team-member-portrait-picture:
   url: >-
-    https://uploads-ssl.webflow.com/644c29ee1dd8d0985f4a1348/644c29ee1dd8d073ac4a135c_image-1-team-dev-template.jpg
+    https://uploads-ssl.webflow.com/644c29ee1dd8d0985f4a1348/66290a2333166fc1c74bb12f_vismaya.png
   alt: null
-updated-on: '2022-02-26T00:28:07.852Z'
+updated-on: '2024-04-24T13:36:02.651Z'
 created-on: '2022-02-26T00:25:53.457Z'
 published-on: '2023-04-28T20:34:00.007Z'
+f_index: 4
 layout: '[team].html'
 tags: team
 ---

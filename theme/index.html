@@ -470,7 +470,7 @@
               {%- unless collection.length == 0 -%}<div role="list" class="grid-2-columns gap-row-40px w-dyn-items">
                 {%- for item in collection -%}<div id="w-node-eddc45c9-a60d-028f-f227-c953eb10d911-3a4a13c0" role="listitem" class="w-dyn-item">
                   <a href="{{ item.url }}" class="card link-card project-item w-inline-block">
-                    <div class="mg-bottom-32px"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;82vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;79vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;38vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;34vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;480px&quot;}]" src="{{ item.data.f_project-client-logo.url }}" class=""></div>
+                    <div class="mg-bottom-32px"><img loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;82vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;79vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;38vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;34vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;480px&quot;}]" src="{{ item.data.f_project-client-logo.url }}" alt="{{ images.0.alt | escape }}" class=""></div>
                     <h3 class="display-4 mg-bottom-32px">{{ item.data.title }}</h3>
                     <div class="link-wrapper white-color-hover-none mg-top-auto">
                       <div class="link-text">{{ texts.4ee07583 }}</div>
@@ -526,7 +526,7 @@
                 {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                   {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                     <a href="{{ item.url }}" class="card link-card post-item w-inline-block">
-                      <div class="image-wrapper"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" class="image cover"></div>
+                      <div class="image-wrapper"><img loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" alt="{{ images.0.alt | escape }}" class="image cover"></div>
                       <div class="card-post-content">
                         <h3 class="heading-h3-size mg-bottom-16px">{{ item.data.title }}</h3>
                         <p class="mg-bottom-0">{{ item.data.f_blog-post-excerpt }}</p>
@@ -534,7 +534,7 @@
                           <div class="divider _32px"></div>
                           <div class="w-layout-grid grid-2-columns card-post">
                             {%- assign ref = item.data.f_blog-post-category | resolveReference -%}<div id="w-node-_33d934b6-30aa-658a-dcca-c11c42416af6-3a4a13c0" class="badge-secondary small">{{ ref.data.title }}</div>
-                            <div id="w-node-fe0d2ad0-f8d2-8ce0-21eb-0e04d4738d3a-3a4a13c0" class="text-200 color-neutral-200">{{  item.data.f_updated-on | formatDate: "MMM d, yyyy" }}</div>
+                            <div id="w-node-fe0d2ad0-f8d2-8ce0-21eb-0e04d4738d3a-3a4a13c0" class="text-200 color-neutral-200">{{  item.data.updated-on | formatDate: "MMM d, yyyy" }}</div>
                           </div>
                         </div>
                       </div>
@@ -551,7 +551,7 @@
                 {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                   {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                     <a href="{{ item.url }}" class="card link-card post-item w-inline-block">
-                      <div class="image-wrapper"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" class="image cover"></div>
+                      <div class="image-wrapper"><img loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" alt="{{ images.0.alt | escape }}" class="image cover"></div>
                       <div class="card-post-content">
                         <h3 class="heading-h3-size mg-bottom-16px">{{ item.data.title }}</h3>
                         <p class="mg-bottom-0">{{ item.data.f_blog-post-excerpt }}</p>
@@ -559,7 +559,7 @@
                           <div class="divider _32px"></div>
                           <div class="w-layout-grid grid-2-columns card-post">
                             {%- assign ref = item.data.f_blog-post-category | resolveReference -%}<div id="w-node-_19260b54-90ad-646e-9521-d9f0242e5e4f-3a4a13c0" class="badge-secondary small">{{ ref.data.title }}</div>
-                            <div id="w-node-_19260b54-90ad-646e-9521-d9f0242e5e50-3a4a13c0" class="text-200 color-neutral-200">{{  item.data.f_updated-on | formatDate: "MMM d, yyyy" }}</div>
+                            <div id="w-node-_19260b54-90ad-646e-9521-d9f0242e5e50-3a4a13c0" class="text-200 color-neutral-200">{{  item.data.updated-on | formatDate: "MMM d, yyyy" }}</div>
                           </div>
                         </div>
                       </div>
@@ -576,7 +576,7 @@
                 {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                   {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                     <a href="{{ item.url }}" class="card link-card post-item w-inline-block">
-                      <div class="image-wrapper"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" class="image cover"></div>
+                      <div class="image-wrapper"><img loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" alt="{{ images.0.alt | escape }}" class="image cover"></div>
                       <div class="card-post-content">
                         <h3 class="heading-h3-size mg-bottom-16px">{{ item.data.title }}</h3>
                         <p class="mg-bottom-0">{{ item.data.f_blog-post-excerpt }}</p>
@@ -584,7 +584,7 @@
                           <div class="divider _32px"></div>
                           <div class="w-layout-grid grid-2-columns card-post">
                             {%- assign ref = item.data.f_blog-post-category | resolveReference -%}<div id="w-node-da9d9c0e-4c72-7d94-2f68-5f09bb5ca6f5-3a4a13c0" class="badge-secondary small">{{ ref.data.title }}</div>
-                            <div id="w-node-da9d9c0e-4c72-7d94-2f68-5f09bb5ca6f6-3a4a13c0" class="text-200 color-neutral-200">{{  item.data.f_updated-on | formatDate: "MMM d, yyyy" }}</div>
+                            <div id="w-node-da9d9c0e-4c72-7d94-2f68-5f09bb5ca6f6-3a4a13c0" class="text-200 color-neutral-200">{{  item.data.updated-on | formatDate: "MMM d, yyyy" }}</div>
                           </div>
                         </div>
                       </div>
@@ -601,7 +601,7 @@
                 {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                   {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                     <a href="{{ item.url }}" class="card link-card post-item w-inline-block">
-                      <div class="image-wrapper"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" class="image cover"></div>
+                      <div class="image-wrapper"><img loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" alt="{{ images.0.alt | escape }}" class="image cover"></div>
                       <div class="card-post-content">
                         <h3 class="heading-h3-size mg-bottom-16px">{{ item.data.title }}</h3>
                         <p class="mg-bottom-0">{{ item.data.f_blog-post-excerpt }}</p>
@@ -609,7 +609,7 @@
                           <div class="divider _32px"></div>
                           <div class="w-layout-grid grid-2-columns card-post">
                             {%- assign ref = item.data.f_blog-post-category | resolveReference -%}<div id="w-node-_0e9ef39b-8408-fa20-2074-8a930bdfb747-3a4a13c0" class="badge-secondary small">{{ ref.data.title }}</div>
-                            <div id="w-node-_0e9ef39b-8408-fa20-2074-8a930bdfb748-3a4a13c0" class="text-200 color-neutral-200">{{  item.data.f_updated-on | formatDate: "MMM d, yyyy" }}</div>
+                            <div id="w-node-_0e9ef39b-8408-fa20-2074-8a930bdfb748-3a4a13c0" class="text-200 color-neutral-200">{{  item.data.updated-on | formatDate: "MMM d, yyyy" }}</div>
                           </div>
                         </div>
                       </div>
@@ -626,7 +626,7 @@
                 {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                   {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                     <a href="{{ item.url }}" class="card link-card post-item w-inline-block">
-                      <div class="image-wrapper"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" class="image cover"></div>
+                      <div class="image-wrapper"><img loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" alt="{{ images.0.alt | escape }}" class="image cover"></div>
                       <div class="card-post-content">
                         <h3 class="heading-h3-size mg-bottom-16px">{{ item.data.title }}</h3>
                         <p class="mg-bottom-0">{{ item.data.f_blog-post-excerpt }}</p>
@@ -634,7 +634,7 @@
                           <div class="divider _32px"></div>
                           <div class="w-layout-grid grid-2-columns card-post">
                             {%- assign ref = item.data.f_blog-post-category | resolveReference -%}<div id="w-node-_536a2d35-0a07-f013-8434-da7598d22345-3a4a13c0" class="badge-secondary small">{{ ref.data.title }}</div>
-                            <div id="w-node-_536a2d35-0a07-f013-8434-da7598d22346-3a4a13c0" class="text-200 color-neutral-200">{{  item.data.f_updated-on | formatDate: "MMM d, yyyy" }}</div>
+                            <div id="w-node-_536a2d35-0a07-f013-8434-da7598d22346-3a4a13c0" class="text-200 color-neutral-200">{{  item.data.updated-on | formatDate: "MMM d, yyyy" }}</div>
                           </div>
                         </div>
                       </div>
@@ -651,7 +651,7 @@
                 {%- unless collection.length == 0 -%}<div role="list" class="w-dyn-items">
                   {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                     <a href="{{ item.url }}" class="card link-card post-item w-inline-block">
-                      <div class="image-wrapper"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" class="image cover"></div>
+                      <div class="image-wrapper"><img loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" alt="{{ images.0.alt | escape }}" class="image cover"></div>
                       <div class="card-post-content">
                         <h3 class="heading-h3-size mg-bottom-16px">{{ item.data.title }}</h3>
                         <p class="mg-bottom-0">{{ item.data.f_blog-post-excerpt }}</p>
@@ -659,7 +659,7 @@
                           <div class="divider _32px"></div>
                           <div class="w-layout-grid grid-2-columns card-post">
                             {%- assign ref = item.data.f_blog-post-category | resolveReference -%}<div id="w-node-_1812f738-39ca-32d8-9fda-6778f55acf81-3a4a13c0" class="badge-secondary small">{{ ref.data.title }}</div>
-                            <div id="w-node-_1812f738-39ca-32d8-9fda-6778f55acf82-3a4a13c0" class="text-200 color-neutral-200">{{  item.data.f_updated-on | formatDate: "MMM d, yyyy" }}</div>
+                            <div id="w-node-_1812f738-39ca-32d8-9fda-6778f55acf82-3a4a13c0" class="text-200 color-neutral-200">{{  item.data.updated-on | formatDate: "MMM d, yyyy" }}</div>
                           </div>
                         </div>
                       </div>
@@ -706,7 +706,7 @@
                         <div class="flex-horizontal card-testimonial-avatar">
                           <div class="mg-right-10px mg-bottom-15px">
                             <div class="inner-container _64px width-100">
-                              <div class="image-wrapper border-radius-4px"><img src="{{ images.1e380039.url }}" alt="{{ images.1e380039.alt | escape }}" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;64px&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;6vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;64px&quot;}]" sizes="100vw" loading="eager"></div>
+                              <div class="image-wrapper border-radius-4px"><img src="{{ images.1e380039.url }}" alt="{{ images.1e380039.alt | escape }}" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;64px&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;6vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;64px&quot;}]" sizes="(max-width: 479px) 100vw, (max-width: 991px) 64px, (max-width: 1439px) 5vw, 64px" loading="eager"></div>
                             </div>
                           </div>
                           <div class="mg-right-8px">
@@ -845,7 +845,7 @@
                         <div class="flex-horizontal card-testimonial-avatar">
                           <div class="mg-right-10px mg-bottom-15px">
                             <div class="inner-container _64px width-100">
-                              <div class="image-wrapper border-radius-4px"><img src="{{ images.-6e5ac969.url }}" alt="{{ images.-6e5ac969.alt | escape }}" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;64px&quot;}]" sizes="100vw" loading="eager"></div>
+                              <div class="image-wrapper border-radius-4px"><img src="{{ images.-6e5ac969.url }}" alt="{{ images.-6e5ac969.alt | escape }}" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;100vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;64px&quot;}]" sizes="(max-width: 479px) 100vw, 64px" loading="eager"></div>
                             </div>
                           </div>
                           <div class="mg-right-8px">
@@ -962,4 +962,4 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
 
-<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script>window.netlifyIdentity&&window.netlifyIdentity.on("init",a=>{a||window.netlifyIdentity.on("login",()=>{document.location.href="/admin/"})});</script>{%- include "partials/_snipcart-footer" -%}</body></html>
+<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script>window.netlifyIdentity&&window.netlifyIdentity.on("init",a=>{a||window.netlifyIdentity.on("login",()=>{document.location.href="/admin/"})});</script><script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.4/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script>{%- include "partials/_snipcart-footer" -%}</body></html>

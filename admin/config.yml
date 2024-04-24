@@ -3,7 +3,7 @@ backend:
   accept_roles:
     - admin
     - editor
-  branch: main
+  branch: master
 media_folder: theme/assets/images
 public_folder: /assets/images
 collections:
@@ -913,6 +913,11 @@ collections:
         label: Team Member - GitHub Link
         widget: string
         required: false
+      - hint: ''
+        name: f_index
+        label: Index
+        widget: number
+        required: false
       - label: Tags
         widget: hidden
         name: tags
@@ -1444,42 +1449,27 @@ collections:
             label: Text
             name: '-45b19e2c'
             widget: string
-          - hint: 'Original text: Riyadh, SA, key: -1b4ae65b'
+          - hint: 'Original text: Hosur Head Office , IN, key: -5499064c'
             label: Text
-            name: '-1b4ae65b'
+            name: '-5499064c'
             widget: string
-          - hint: 'Original text: , key: e81e'
+          - hint: >-
+              Original text: 5/311-4, 10th Cross, Kamaraj Nagar, Chinna
+              Elasagiri, HOSUR - 635 126, key: -2bfd831e
             label: Text
-            name: e81e
+            name: '-2bfd831e'
             widget: string
-          - hint: 'Original text: sa@emildasolutions.com, key: 4e080a33'
+          - hint: 'Original text: Hosur Operations, IN, key: -6438e324'
             label: Text
-            name: 4e080a33
+            name: '-6438e324'
             widget: string
-          - hint: 'Original text: Dubai, UAE, key: 2be11f2c'
+          - hint: >-
+              Original text: Fort Forge, Cabin CO2, near TVS Academy, Sipcot
+              Phase II Industrial Complex, Sipcot Ph 2, Hosur, Tamil Nadu
+              635109, key: -316916c8
             label: Text
-            name: 2be11f2c
-            widget: string
-          - hint: 'Original text: uae@emildasolutions.com, key: -c503442'
-            label: Text
-            name: '-c503442'
-            widget: string
-          - hint: 'Original text: Kannur, IN, key: -14dd1514'
-            label: Text
-            name: '-14dd1514'
-            widget: string
-          - hint: 'Original text: kl@emildasolutions.com, key: -5b933e3a'
-            label: Text
-            name: '-5b933e3a'
-            widget: string
-          - hint: 'Original text: Hosur , IN, key: -65ebe870'
-            label: Text
-            name: '-65ebe870'
-            widget: string
-          - hint: 'Original text: hsr@emildasolutions.com, key: 48569a2c'
-            label: Text
-            name: 48569a2c
-            widget: string
+            name: '-316916c8'
+            widget: text
           - hint: 'Original text: Trusted by , key: -44958c20'
             label: Text
             name: '-44958c20'
@@ -1640,6 +1630,10 @@ collections:
             label: Text
             name: '-51f0410d'
             widget: text
+          - hint: 'Original text: India, key: 4383917'
+            label: Text
+            name: '4383917'
+            widget: string
           - hint: 'Original text: Case , key: 3ddfad0'
             label: Text
             name: 3ddfad0
@@ -1753,6 +1747,10 @@ collections:
           - hint: 'Original text: Contact information, key: -2e3f22f4'
             label: Text
             name: '-2e3f22f4'
+            widget: string
+          - hint: 'Original text: , key: e81e'
+            label: Text
+            name: e81e
             widget: string
           - hint: 'Original text: Info@emildasolutions.com, key: -18a36b4d'
             label: Text
@@ -1966,27 +1964,6 @@ collections:
               throughout the process., key: -4fe5f31c
             label: Text
             name: '-4fe5f31c'
-            widget: text
-          - hint: 'Original text: Hosur Head Office , IN, key: -5499064c'
-            label: Text
-            name: '-5499064c'
-            widget: string
-          - hint: >-
-              Original text: 5/311-4, 10th Cross, Kamaraj Nagar, Chinna
-              Elasagiri, HOSUR - 635 126, key: -2bfd831e
-            label: Text
-            name: '-2bfd831e'
-            widget: string
-          - hint: 'Original text: Hosur Operations, IN, key: -6438e324'
-            label: Text
-            name: '-6438e324'
-            widget: string
-          - hint: >-
-              Original text: Fort Forge, Cabin CO2, near TVS Academy, Sipcot
-              Phase II Industrial Complex, Sipcot Ph 2, Hosur, Tamil Nadu
-              635109, key: -316916c8
-            label: Text
-            name: '-316916c8'
             widget: text
           - hint: 'Original text: More articles, key: 18f9688'
             label: Text
@@ -4845,21 +4822,18 @@ collections:
             label: Link
             name: 58314dd7
             widget: string
-          - hint: 'Original link: mailto:sanfrancisco@dev.com, key: -f094850'
+          - hint: >-
+              Original link:
+              https://www.google.com/maps/search/5%2F311-4,+10th+Cross,+Kamaraj+Nagar,+Chinna+Elasagiri,+HOSUR+-+635+126/@12.7575788,77.8150842,21z/data=!4m6!2m5!3m4!2s12.757608,+77.815073!4m2!1d77.8150734!2d12.7576079?entry=ttu,
+              key: -7e797749
             label: Link
-            name: '-f094850'
+            name: '-7e797749'
             widget: string
-          - hint: 'Original link: mailto:newyork@dev.com, key: -26c19eb1'
+          - hint: >-
+              Original link: https://maps.app.goo.gl/7hdk1eeJLHt643Zx8, key:
+              -39dfbfc2
             label: Link
-            name: '-26c19eb1'
-            widget: string
-          - hint: 'Original link: mailto:losangeles@dev.com, key: 2752ea0f'
-            label: Link
-            name: 2752ea0f
-            widget: string
-          - hint: 'Original link: mailto:chicago@dev.com, key: -649c4ab6'
-            label: Link
-            name: '-649c4ab6'
+            name: '-39dfbfc2'
             widget: string
           - hint: 'Original link: #open-positions, key: -147eb876'
             label: Link
@@ -4900,19 +4874,6 @@ collections:
               174d35d
             label: Link
             name: 174d35d
-            widget: string
-          - hint: >-
-              Original link:
-              https://www.google.com/maps/search/5%2F311-4,+10th+Cross,+Kamaraj+Nagar,+Chinna+Elasagiri,+HOSUR+-+635+126/@12.7575788,77.8150842,21z/data=!4m6!2m5!3m4!2s12.757608,+77.815073!4m2!1d77.8150734!2d12.7576079?entry=ttu,
-              key: -7e797749
-            label: Link
-            name: '-7e797749'
-            widget: string
-          - hint: >-
-              Original link: https://maps.app.goo.gl/7hdk1eeJLHt643Zx8, key:
-              -39dfbfc2
-            label: Link
-            name: '-39dfbfc2'
             widget: string
           - hint: 'Original link: /checkout/, key: -eb5dfa6'
             label: Link

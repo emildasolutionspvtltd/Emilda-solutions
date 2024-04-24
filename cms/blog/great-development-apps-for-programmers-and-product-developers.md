@@ -21,7 +21,7 @@ f_blog-post-category: cms/blog-post-categories/resources.md
 updated-on: '2024-04-03T10:02:59.906Z'
 created-on: '2022-02-25T01:35:58.431Z'
 published-on: '2024-04-03T10:11:40.929Z'
-f_blog-post-author: cms/team/patrick-meyer.md
+f_blog-post-author: cms/team/sathish-kumar.md
 layout: '[blog].html'
 tags: blog
 ---

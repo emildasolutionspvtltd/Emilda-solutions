@@ -165,7 +165,7 @@
                 <div class="mg-bottom-53px">
                   <div class="w-layout-grid grid-2-columns team">
                     <div class="inner-container _135px">
-                      <div class="image-wrapper border-radius-6px"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;135px&quot;}]" src="{{ f_team-member-portrait-picture.url }}" class="image cover"></div>
+                      <div class="image-wrapper border-radius-6px"><img loading="eager" data-sizes="[{&quot;max&quot;:10000,&quot;size&quot;:&quot;135px&quot;}]" src="{{ f_team-member-portrait-picture.url }}" alt="{{ images.0.alt | escape }}" class="image cover"></div>
                     </div>
                     <div id="w-node-_3e2dd486-aec3-ed77-19e9-64c6c263c23d-a94a139f" class="flex-horizontal team">
                       <div class="mg-right-16px mg-right-0px-mbl mg-bottom-20px-mbl">
@@ -225,7 +225,7 @@
             {%- unless collection.length == 0 -%}<div role="list" class="grid-2-columns gap-48px w-dyn-items">
               {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                 <a href="{{ item.url }}" class="card link-card post-item w-inline-block">
-                  <div class="image-wrapper"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;90vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;46vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;45vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" class="image cover"></div>
+                  <div class="image-wrapper"><img loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;90vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;46vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;45vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" alt="{{ images.0.alt | escape }}" class="image cover"></div>
                   <div class="card-post-content">
                     <h3 class="heading-h3-size mg-bottom-16px">{{ item.data.title }}</h3>
                     <p class="mg-bottom-0">{{ item.data.f_blog-post-excerpt }}</p>
@@ -233,7 +233,7 @@
                       <div class="divider _32px"></div>
                       <div class="w-layout-grid grid-2-columns card-post">
                         {%- assign ref = item.data.f_blog-post-category | resolveReference -%}<div id="w-node-_3820cdb1-aa15-b4a3-5354-f451b9f90bb1-a94a139f" class="badge-secondary small">{{ ref.data.title }}</div>
-                        <div id="w-node-_3820cdb1-aa15-b4a3-5354-f451b9f90bb2-a94a139f" class="text-200 color-neutral-200">{{  item.data.f_updated-on | formatDate: "MMM d, yyyy" }}</div>
+                        <div id="w-node-_3820cdb1-aa15-b4a3-5354-f451b9f90bb2-a94a139f" class="text-200 color-neutral-200">{{  item.data.updated-on | formatDate: "MMM d, yyyy" }}</div>
                       </div>
                     </div>
                   </div>
@@ -330,4 +330,4 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
 
-<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}{%- include "partials/_snipcart-footer" -%}</body></html>
+<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.4/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script>{%- include "partials/_snipcart-footer" -%}</body></html>

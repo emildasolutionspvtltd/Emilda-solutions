@@ -172,7 +172,7 @@
                   {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                     <a href="{{ item.url }}" class="link-wrap post-featured-last w-inline-block">
                       <div class="mg-bottom-40px mg-bottom-30px-mbl">
-                        <div class="image-wrapper border-radius-12px"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;90vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;95vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;49vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;702px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" class="image cover"></div>
+                        <div class="image-wrapper border-radius-12px"><img loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;90vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;95vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;49vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;702px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" alt="{{ images.0.alt | escape }}" class="image cover"></div>
                       </div>
                       <div class="inner-container post-featured-last">
                         <h2 class="heading-h2-size">{{ item.data.title }}</h2>
@@ -190,7 +190,7 @@
                   {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                     <a href="{{ item.url }}" class="link-wrap post-featured w-inline-block">
                       <div class="inner-container post-featured-image">
-                        <div class="image-wrapper border-radius-8px height-100"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;43vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;22vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;222px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" class="image cover"></div>
+                        <div class="image-wrapper border-radius-8px height-100"><img loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;92vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;43vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;22vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;222px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" alt="{{ images.0.alt | escape }}" class="image cover"></div>
                       </div>
                       <div class="inner-container post-featured">
                         <h3 class="heading-h5-size mg-bottom-0">{{ item.data.title }}</h3>
@@ -241,7 +241,7 @@
               {%- unless pagination.length == 0 -%}<div role="list" class="grid-2-columns gap-48px w-dyn-items">
                 {%- for item in pagination[0] -%}<div id="w-node-bf030c1f-f95d-c18f-eb5d-765cff0828ce-af4a1378" role="listitem" class="w-dyn-item">
                   <a href="{{ item.url }}" class="card link-card post-item w-inline-block">
-                    <div class="image-wrapper"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;90vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;46vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;45vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" class="image cover"></div>
+                    <div class="image-wrapper"><img loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;90vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;46vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;45vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" alt="{{ images.0.alt | escape }}" class="image cover"></div>
                     <div class="card-post-content">
                       <h3 class="heading-h3-size mg-bottom-16px">{{ item.data.title }}</h3>
                       <p class="mg-bottom-0">{{ item.data.f_blog-post-excerpt }}</p>
@@ -249,7 +249,7 @@
                         <div class="divider _32px"></div>
                         <div class="w-layout-grid grid-2-columns card-post">
                           {%- assign ref = item.data.f_blog-post-category | resolveReference -%}<div id="w-node-_5f0d29a6-c892-bd22-fb79-773ce6f65778-af4a1378" class="badge-secondary small">{{ ref.data.title }}</div>
-                          <div id="w-node-_5f0d29a6-c892-bd22-fb79-773ce6f65779-af4a1378" class="text-200 color-neutral-200">{{  item.data.f_updated-on | formatDate: "MMM d, yyyy" }}</div>
+                          <div id="w-node-_5f0d29a6-c892-bd22-fb79-773ce6f65779-af4a1378" class="text-200 color-neutral-200">{{  item.data.updated-on | formatDate: "MMM d, yyyy" }}</div>
                         </div>
                       </div>
                     </div>
@@ -257,7 +257,7 @@
                 </div>{%- endfor -%}
               {%- for paginationPage in pagination -%}{%- if forloop.index > 1 -%}{%- assign paginationFilePath = "/public/_data/paginations" | appendMultiple: page.filePathStem, "/page--340463a6-", forloop.index, ".html" -%}<template data-pagination-index="{{ forloop.index }}" data-pagination-url="{{ paginationFilePath | replace: "/public", "" }}">{% capture currentPageHTML %}{%- for item in paginationPage -%}<div id="w-node-bf030c1f-f95d-c18f-eb5d-765cff0828ce-af4a1378" role="listitem" class="w-dyn-item">
                   <a href="{{ item.url }}" class="card link-card post-item w-inline-block">
-                    <div class="image-wrapper"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;90vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;46vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;45vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" class="image cover"></div>
+                    <div class="image-wrapper"><img loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;91vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;90vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;46vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;45vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;584px&quot;}]" src="{{ item.data.f_blog-post-thumbnail-image-photo.url }}" alt="{{ images.0.alt | escape }}" class="image cover"></div>
                     <div class="card-post-content">
                       <h3 class="heading-h3-size mg-bottom-16px w-dyn-bind-empty">{{ item.data.title }}</h3>
                       <p class="mg-bottom-0 w-dyn-bind-empty">{{ item.data.f_blog-post-excerpt }}</p>
@@ -265,7 +265,7 @@
                         <div class="divider _32px"></div>
                         <div class="w-layout-grid grid-2-columns card-post">
                           {%- assign ref = item.data.f_blog-post-category | resolveReference -%}<div id="w-node-_5f0d29a6-c892-bd22-fb79-773ce6f65778-af4a1378" class="badge-secondary small w-dyn-bind-empty">{{ ref.data.title }}</div>
-                          <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoDateTimeToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Enum&quot;,&quot;val&quot;:&quot;MMM D, YYYY&quot;}}},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;updated-on&quot;}}}}}" id="w-node-_5f0d29a6-c892-bd22-fb79-773ce6f65779-af4a1378" class="text-200 color-neutral-200 w-dyn-bind-empty">{{  item.data.f_updated-on | formatDate: "MMM d, yyyy" }}</div>
+                          <div sym-bind="{&quot;children&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Call&quot;,&quot;val&quot;:{&quot;fun&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:[&quot;DynamoGateway&quot;,&quot;dynamoDateTimeToListOfElements&quot;]},&quot;arg&quot;:{&quot;type&quot;:&quot;Enum&quot;,&quot;val&quot;:&quot;MMM D, YYYY&quot;}}},&quot;arg&quot;:{&quot;type&quot;:&quot;Select&quot;,&quot;val&quot;:{&quot;from&quot;:{&quot;type&quot;:&quot;Variable&quot;,&quot;val&quot;:&quot;Dynamo&quot;},&quot;prop&quot;:&quot;updated-on&quot;}}}}}" id="w-node-_5f0d29a6-c892-bd22-fb79-773ce6f65779-af4a1378" class="text-200 color-neutral-200 w-dyn-bind-empty">{{  item.data.updated-on | formatDate: "MMM d, yyyy" }}</div>
                         </div>
                       </div>
                     </div>
@@ -375,4 +375,4 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
 
-<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}{%- include "partials/_snipcart-footer" -%}</body></html>
+<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.4/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script>{%- include "partials/_snipcart-footer" -%}</body></html>

@@ -253,7 +253,7 @@
             </div>
           </div>
           <div data-w-id="fa8853e9-841d-5d0d-9749-dc4fd504e9e0" style="opacity:0;-webkit-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 0, 0) scale3d(0.95, 0.95, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)" class="position-relative">
-            {%- assign collection = collections.team | sort: "-created-on" -%}<div class="w-dyn-list">
+            {%- assign collection = collections.team | sort: "f_index" -%}<div class="w-dyn-list">
               {%- unless collection.length == 0 -%}<div role="list" class="grid-2-columns w-dyn-items">
                 {%- for item in collection -%}<div role="listitem" class="w-dyn-item">
                   <div data-w-id="0f7b89ae-d56b-64e2-ca94-985cd6a6972d" class="card link-card team-item">
@@ -262,7 +262,7 @@
                         <a id="w-node-e437ff19-0ac2-7200-17e1-0a74a12ead1c-a14a1376" href="{{ item.url }}" class="link-content card-team w-inline-block">
                           <div class="mg-right-16px">
                             <div class="inner-container _80px">
-                              <div class="image-wrapper border-radius-6px card-team-item"><img alt="{{ images.0.alt | escape }}" loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;23vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;13vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;7vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;5vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;58.628475189208984px&quot;}]" src="{{ item.data.f_team-member-portrait-picture.url }}" class="image cover"></div>
+                              <div class="image-wrapper border-radius-6px card-team-item"><img loading="eager" data-sizes="[{&quot;max&quot;:479,&quot;size&quot;:&quot;23vw&quot;},{&quot;max&quot;:767,&quot;size&quot;:&quot;13vw&quot;},{&quot;max&quot;:991,&quot;size&quot;:&quot;7vw&quot;},{&quot;max&quot;:1439,&quot;size&quot;:&quot;5vw&quot;},{&quot;max&quot;:10000,&quot;size&quot;:&quot;58.628475189208984px&quot;}]" src="{{ item.data.f_team-member-portrait-picture.url }}" alt="{{ images.0.alt | escape }}" class="image cover"></div>
                             </div>
                           </div>
                           <div class="width-100">
@@ -283,9 +283,6 @@
                         </div>
                       </div>
                     </div>
-                    <a href="{{ item.url }}" class="link-content w-inline-block">
-                      <p class="mg-bottom-0">{{ item.data.f_team-member-excerpt }}</p>
-                    </a>
                   </div>
                 </div>{%- endfor -%}
               </div>{%- endunless -%}
@@ -568,4 +565,4 @@
       }(document, 'script', 'facebook-jssdk'));
     </script>
 
-<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}{%- include "partials/_snipcart-footer" -%}</body></html>
+<script src="/assets/js/udesly-11ty.min.js" async="" defer=""></script>{{ settings.site.footer_additional_content }}<script type="module">import*as UdeslyBanner from"https://cdn.jsdelivr.net/npm/udesly-ad-banner@0.0.4/loader/index.js";UdeslyBanner.defineCustomElements(),document.body.append(document.createElement("udesly-banner"));</script>{%- include "partials/_snipcart-footer" -%}</body></html>

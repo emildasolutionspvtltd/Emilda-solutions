@@ -3012,9 +3012,9 @@
     }
   });
 
-  // node_modules/symbol-observable/lib/ponyfill.js
+  // node_modules/redux/node_modules/symbol-observable/lib/ponyfill.js
   var require_ponyfill = __commonJS({
-    "node_modules/symbol-observable/lib/ponyfill.js"(exports) {
+    "node_modules/redux/node_modules/symbol-observable/lib/ponyfill.js"(exports) {
       "use strict";
       Object.defineProperty(exports, "__esModule", {
         value: true
@@ -3038,9 +3038,9 @@
     }
   });
 
-  // node_modules/symbol-observable/lib/index.js
+  // node_modules/redux/node_modules/symbol-observable/lib/index.js
   var require_lib = __commonJS({
-    "node_modules/symbol-observable/lib/index.js"(exports, module2) {
+    "node_modules/redux/node_modules/symbol-observable/lib/index.js"(exports, module2) {
       "use strict";
       Object.defineProperty(exports, "__esModule", {
         value: true
@@ -17873,7 +17873,7 @@
     }
   });
 
-  // node_modules/@apollo/client/node_modules/tslib/tslib.es6.js
+  // node_modules/tslib/tslib.es6.mjs
   function __extends(d, b) {
     if (typeof b !== "function" && b !== null)
       throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
@@ -18011,7 +18011,7 @@
   }
   var extendStatics, __assign;
   var init_tslib_es6 = __esm({
-    "node_modules/@apollo/client/node_modules/tslib/tslib.es6.js"() {
+    "node_modules/tslib/tslib.es6.mjs"() {
       extendStatics = function(d, b) {
         extendStatics = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
           d2.__proto__ = b2;
@@ -18023,7 +18023,7 @@
         return extendStatics(d, b);
       };
       __assign = function() {
-        __assign = Object.assign || function __assign3(t) {
+        __assign = Object.assign || function __assign2(t) {
           for (var s, i = 1, n = arguments.length; i < n; i++) {
             s = arguments[i];
             for (var p in s)
@@ -18033,32 +18033,6 @@
           return t;
         };
         return __assign.apply(this, arguments);
-      };
-    }
-  });
-
-  // node_modules/ts-invariant/node_modules/tslib/tslib.es6.js
-  function __extends2(d, b) {
-    if (typeof b !== "function" && b !== null)
-      throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
-    extendStatics2(d, b);
-    function __() {
-      this.constructor = d;
-    }
-    d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
-  }
-  var extendStatics2;
-  var init_tslib_es62 = __esm({
-    "node_modules/ts-invariant/node_modules/tslib/tslib.es6.js"() {
-      extendStatics2 = function(d, b) {
-        extendStatics2 = Object.setPrototypeOf || { __proto__: [] } instanceof Array && function(d2, b2) {
-          d2.__proto__ = b2;
-        } || function(d2, b2) {
-          for (var p in b2)
-            if (Object.prototype.hasOwnProperty.call(b2, p))
-              d2[p] = b2[p];
-        };
-        return extendStatics2(d, b);
       };
     }
   });
@@ -18085,7 +18059,7 @@
   var genericMessage, _a, setPrototypeOf, InvariantError, verbosityLevels, verbosityLevel;
   var init_invariant = __esm({
     "node_modules/ts-invariant/lib/invariant.js"() {
-      init_tslib_es62();
+      init_tslib_es6();
       genericMessage = "Invariant Violation";
       _a = Object.setPrototypeOf;
       setPrototypeOf = _a === void 0 ? function(obj, proto) {
@@ -18094,7 +18068,7 @@
       } : _a;
       InvariantError = /** @class */
       function(_super) {
-        __extends2(InvariantError2, _super);
+        __extends(InvariantError2, _super);
         function InvariantError2(message) {
           if (message === void 0) {
             message = genericMessage;
@@ -21520,7 +21494,7 @@ spurious results.`);
     }
   });
 
-  // node_modules/@apollo/client/node_modules/@wry/trie/lib/index.js
+  // node_modules/@wry/trie/lib/index.js
   function isObjRef(value) {
     switch (typeof value) {
       case "object":
@@ -21533,7 +21507,7 @@ spurious results.`);
   }
   var defaultMakeData, forEach2, slice, hasOwnProperty2, Trie;
   var init_lib = __esm({
-    "node_modules/@apollo/client/node_modules/@wry/trie/lib/index.js"() {
+    "node_modules/@wry/trie/lib/index.js"() {
       defaultMakeData = () => /* @__PURE__ */ Object.create(null);
       ({ forEach: forEach2, slice } = Array.prototype);
       ({ hasOwnProperty: hasOwnProperty2 } = Object.prototype);
@@ -23065,7 +23039,7 @@ spurious results.`);
     }
   });
 
-  // node_modules/@apollo/client/node_modules/symbol-observable/es/ponyfill.js
+  // node_modules/symbol-observable/es/ponyfill.js
   function symbolObservablePonyfill(root2) {
     var result2;
     var Symbol2 = root2.Symbol;
@@ -23089,14 +23063,14 @@ spurious results.`);
     return result2;
   }
   var init_ponyfill = __esm({
-    "node_modules/@apollo/client/node_modules/symbol-observable/es/ponyfill.js"() {
+    "node_modules/symbol-observable/es/ponyfill.js"() {
     }
   });
 
-  // node_modules/@apollo/client/node_modules/symbol-observable/es/index.js
+  // node_modules/symbol-observable/es/index.js
   var root, result;
   var init_es = __esm({
-    "node_modules/@apollo/client/node_modules/symbol-observable/es/index.js"() {
+    "node_modules/symbol-observable/es/index.js"() {
       init_ponyfill();
       if (typeof self !== "undefined") {
         root = self;
@@ -24840,106 +24814,99 @@ spurious results.`);
     }
   });
 
-  // node_modules/@wry/context/lib/context.esm.js
+  // node_modules/@wry/context/lib/slot.js
   function maybe2(fn) {
     try {
       return fn();
     } catch (ignored) {
     }
   }
-  var currentContext, MISSING_VALUE, idCounter, makeSlotClass, globalKey, host, globalHost, Slot, bind, noContext;
-  var init_context_esm = __esm({
-    "node_modules/@wry/context/lib/context.esm.js"() {
+  var currentContext, MISSING_VALUE, idCounter, makeSlotClass, globalKey, host, globalHost, Slot;
+  var init_slot = __esm({
+    "node_modules/@wry/context/lib/slot.js"() {
       currentContext = null;
       MISSING_VALUE = {};
       idCounter = 1;
-      makeSlotClass = function() {
-        return (
-          /** @class */
-          function() {
-            function Slot2() {
-              this.id = [
-                "slot",
-                idCounter++,
-                Date.now(),
-                Math.random().toString(36).slice(2)
-              ].join(":");
+      makeSlotClass = () => class Slot {
+        constructor() {
+          this.id = [
+            "slot",
+            idCounter++,
+            Date.now(),
+            Math.random().toString(36).slice(2)
+          ].join(":");
+        }
+        hasValue() {
+          for (let context = currentContext; context; context = context.parent) {
+            if (this.id in context.slots) {
+              const value = context.slots[this.id];
+              if (value === MISSING_VALUE)
+                break;
+              if (context !== currentContext) {
+                currentContext.slots[this.id] = value;
+              }
+              return true;
             }
-            Slot2.prototype.hasValue = function() {
-              for (var context_1 = currentContext; context_1; context_1 = context_1.parent) {
-                if (this.id in context_1.slots) {
-                  var value = context_1.slots[this.id];
-                  if (value === MISSING_VALUE)
-                    break;
-                  if (context_1 !== currentContext) {
-                    currentContext.slots[this.id] = value;
-                  }
-                  return true;
-                }
-              }
-              if (currentContext) {
-                currentContext.slots[this.id] = MISSING_VALUE;
-              }
-              return false;
-            };
-            Slot2.prototype.getValue = function() {
-              if (this.hasValue()) {
-                return currentContext.slots[this.id];
-              }
-            };
-            Slot2.prototype.withValue = function(value, callback, args, thisArg) {
-              var _a2;
-              var slots = (_a2 = {
-                __proto__: null
-              }, _a2[this.id] = value, _a2);
-              var parent = currentContext;
-              currentContext = { parent, slots };
-              try {
-                return callback.apply(thisArg, args);
-              } finally {
-                currentContext = parent;
-              }
-            };
-            Slot2.bind = function(callback) {
-              var context = currentContext;
-              return function() {
-                var saved = currentContext;
-                try {
-                  currentContext = context;
-                  return callback.apply(this, arguments);
-                } finally {
-                  currentContext = saved;
-                }
-              };
-            };
-            Slot2.noContext = function(callback, args, thisArg) {
-              if (currentContext) {
-                var saved = currentContext;
-                try {
-                  currentContext = null;
-                  return callback.apply(thisArg, args);
-                } finally {
-                  currentContext = saved;
-                }
-              } else {
-                return callback.apply(thisArg, args);
-              }
-            };
-            return Slot2;
-          }()
-        );
+          }
+          if (currentContext) {
+            currentContext.slots[this.id] = MISSING_VALUE;
+          }
+          return false;
+        }
+        getValue() {
+          if (this.hasValue()) {
+            return currentContext.slots[this.id];
+          }
+        }
+        withValue(value, callback, args, thisArg) {
+          const slots = {
+            __proto__: null,
+            [this.id]: value
+          };
+          const parent = currentContext;
+          currentContext = { parent, slots };
+          try {
+            return callback.apply(thisArg, args);
+          } finally {
+            currentContext = parent;
+          }
+        }
+        // Capture the current context and wrap a callback function so that it
+        // reestablishes the captured context when called.
+        static bind(callback) {
+          const context = currentContext;
+          return function() {
+            const saved = currentContext;
+            try {
+              currentContext = context;
+              return callback.apply(this, arguments);
+            } finally {
+              currentContext = saved;
+            }
+          };
+        }
+        // Immediately run a callback function without any captured context.
+        static noContext(callback, args, thisArg) {
+          if (currentContext) {
+            const saved = currentContext;
+            try {
+              currentContext = null;
+              return callback.apply(thisArg, args);
+            } finally {
+              currentContext = saved;
+            }
+          } else {
+            return callback.apply(thisArg, args);
+          }
+        }
       };
       globalKey = "@wry/context:Slot";
       host = // Prefer globalThis when available.
       // https://github.com/benjamn/wryware/issues/347
-      maybe2(function() {
-        return globalThis;
-      }) || // Fall back to global, which works in Node.js and may be converted by some
+      maybe2(() => globalThis) || // Fall back to global, which works in Node.js and may be converted by some
       // bundlers to the appropriate identifier (window, self, ...) depending on the
       // bundling target. https://github.com/endojs/endo/issues/576#issuecomment-1178515224
-      maybe2(function() {
-        return global;
-      }) || // Otherwise, use a dummy host that's local to this module. We used to fall
+      maybe2(() => global) || // Otherwise, use a dummy host that's local to this module. We used to fall
       // back to using the Array constructor as a namespace, but that was flagged in
       // https://github.com/benjamn/wryware/issues/347, and can be avoided.
       /* @__PURE__ */ Object.create(null);
@@ -24964,8 +24931,15 @@ spurious results.`);
           return Slot2;
         }
       }(makeSlotClass());
-      bind = Slot.bind;
-      noContext = Slot.noContext;
+    }
+  });
+
+  // node_modules/@wry/context/lib/index.js
+  var bind, noContext;
+  var init_lib5 = __esm({
+    "node_modules/@wry/context/lib/index.js"() {
+      init_slot();
+      ({ bind, noContext } = Slot);
     }
   });
 
@@ -24973,8 +24947,8 @@ spurious results.`);
   var parentEntrySlot;
   var init_context = __esm({
     "node_modules/optimism/lib/context.js"() {
-      init_context_esm();
-      init_context_esm();
+      init_lib5();
+      init_lib5();
       parentEntrySlot = new Slot();
     }
   });
@@ -25355,7 +25329,7 @@ spurious results.`);
     return Object.freeze(optimistic);
   }
   var defaultKeyTrie, caches;
-  var init_lib5 = __esm({
+  var init_lib6 = __esm({
     "node_modules/optimism/lib/index.js"() {
       init_lib3();
       init_lib4();
@@ -25372,7 +25346,7 @@ spurious results.`);
   var init_cache = __esm({
     "node_modules/@apollo/client/cache/core/cache.js"() {
       init_tslib_es6();
-      init_lib5();
+      init_lib6();
       init_utilities();
       ApolloCache = /** @class */
       function() {
@@ -25595,7 +25569,7 @@ spurious results.`);
     "node_modules/@apollo/client/cache/inmemory/entityStore.js"() {
       init_tslib_es6();
       init_globals();
-      init_lib5();
+      init_lib6();
       init_lib2();
       init_lib();
       init_utilities();
@@ -26241,7 +26215,7 @@ spurious results.`);
       init_tslib_es6();
       init_globals();
       init_graphql();
-      init_lib5();
+      init_lib6();
       init_utilities();
       init_entityStore();
       init_helpers2();
@@ -26547,7 +26521,7 @@ spurious results.`);
   var cacheSlot, cacheInfoMap;
   var init_reactiveVars = __esm({
     "node_modules/@apollo/client/cache/inmemory/reactiveVars.js"() {
-      init_lib5();
+      init_lib6();
       cacheSlot = new Slot();
       cacheInfoMap = /* @__PURE__ */ new WeakMap();
     }
@@ -27519,7 +27493,7 @@ spurious results.`);
     "node_modules/@apollo/client/cache/inmemory/inMemoryCache.js"() {
       init_tslib_es6();
       init_globals();
-      init_lib5();
+      init_lib6();
       init_lib2();
       init_cache();
       init_common();
@@ -30449,25 +30423,6 @@ spurious results.`);
     }
   });
 
-  // node_modules/graphql-tag/node_modules/tslib/tslib.es6.js
-  var __assign2;
-  var init_tslib_es63 = __esm({
-    "node_modules/graphql-tag/node_modules/tslib/tslib.es6.js"() {
-      __assign2 = function() {
-        __assign2 = Object.assign || function __assign3(t) {
-          for (var s, i = 1, n = arguments.length; i < n; i++) {
-            s = arguments[i];
-            for (var p in s)
-              if (Object.prototype.hasOwnProperty.call(s, p))
-                t[p] = s[p];
-          }
-          return t;
-        };
-        return __assign2.apply(this, arguments);
-      };
-    }
-  });
-
   // node_modules/graphql-tag/lib/index.js
   function normalize2(string) {
     return string.replace(/[\s,]+/g, " ").trim();
@@ -30499,7 +30454,7 @@ spurious results.`);
         definitions.push(fragmentDefinition);
       }
     });
-    return __assign2(__assign2({}, ast), { definitions });
+    return __assign(__assign({}, ast), { definitions });
   }
   function stripLoc(doc) {
     var workSet = new Set(doc.definitions);
@@ -30567,9 +30522,9 @@ spurious results.`);
     experimentalFragmentVariables = false;
   }
   var docCache, fragmentSourceMap, printFragmentWarnings, experimentalFragmentVariables, extras, lib_default2;
-  var init_lib6 = __esm({
+  var init_lib7 = __esm({
     "node_modules/graphql-tag/lib/index.js"() {
-      init_tslib_es63();
+      init_tslib_es6();
       init_graphql();
       docCache = /* @__PURE__ */ new Map();
       fragmentSourceMap = /* @__PURE__ */ new Map();
@@ -34458,7 +34413,7 @@ spurious results.`);
   var init_commerceUtils = __esm({
     "packages/shared/render/plugins/Commerce/modules/commerceUtils.ts"() {
       "use strict";
-      init_lib6();
+      init_lib7();
       init_constants();
       safeParseJson = (jsonString) => {
         let json = null;
@@ -43598,7 +43553,7 @@ spurious results.`);
   var init_mutations = __esm({
     "packages/systems/users/siteBundles/mutations.ts"() {
       "use strict";
-      init_lib6();
+      init_lib7();
       loginMutation = lib_default2`
   mutation UserLoginRequest($email: String!, $authPassword: String!) {
     usysCreateSession(email: $email, authPassword: $authPassword) {
@@ -44511,7 +44466,7 @@ spurious results.`);
   var init_queries = __esm({
     "packages/systems/users/siteBundles/queries.ts"() {
       "use strict";
-      init_lib6();
+      init_lib7();
       getUserSubscriptions = lib_default2`
   query FetchSubscriptions {
     database {
@@ -45393,7 +45348,7 @@ spurious results.`);
   var init_addToCartEvents = __esm({
     "packages/shared/render/plugins/Commerce/modules/addToCartEvents.ts"() {
       "use strict";
-      init_lib6();
+      init_lib7();
       init_constants();
       init_constants2();
       init_constants3();
@@ -48028,7 +47983,7 @@ spurious results.`);
   var init_checkoutMutations = __esm({
     "packages/shared/render/plugins/Commerce/modules/checkoutMutations.ts"() {
       "use strict";
-      init_lib6();
+      init_lib7();
       updateOrderIdentityMutation = lib_default2`
   mutation CheckoutUpdateOrderIdentity($email: String) {
     ecommerceUpdateIdentity(email: $email) {
@@ -48182,7 +48137,7 @@ spurious results.`);
   var init_checkoutUtils = __esm({
     "packages/shared/render/plugins/Commerce/modules/checkoutUtils.ts"() {
       "use strict";
-      init_lib6();
+      init_lib7();
       init_commerceUtils();
       init_StyleMapObserver();
       init_constants();
@@ -48701,7 +48656,7 @@ spurious results.`);
   var init_webPaymentsEvents = __esm({
     "packages/shared/render/plugins/Commerce/modules/webPaymentsEvents.ts"() {
       "use strict";
-      init_lib6();
+      init_lib7();
       init_commerceUtils();
       init_stripeStore();
       init_checkoutUtils();
@@ -49053,7 +49008,7 @@ spurious results.`);
   var init_cartEvents = __esm({
     "packages/shared/render/plugins/Commerce/modules/cartEvents.ts"() {
       "use strict";
-      init_lib6();
+      init_lib7();
       import_mergeWith = __toESM(require_mergeWith());
       import_forEach3 = __toESM(require_forEach());
       init_constants();
@@ -51126,7 +51081,7 @@ spurious results.`);
   var init_orderConfirmationEvents = __esm({
     "packages/shared/render/plugins/Commerce/modules/orderConfirmationEvents.ts"() {
       "use strict";
-      init_lib6();
+      init_lib7();
       import_qs = __toESM(require_lib4());
       init_commerceUtils();
       init_rendering();
@@ -53623,38 +53578,6 @@ timm/lib/timm.js:
    * @copyright Guillermo Grau Panea 2016
    * @license MIT
    *)
-
-tslib/tslib.es6.js:
-  (*! *****************************************************************************
-  Copyright (c) Microsoft Corporation.
-  
-  Permission to use, copy, modify, and/or distribute this software for any
-  purpose with or without fee is hereby granted.
-  
-  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-  REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-  AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-  INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-  LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-  OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-  PERFORMANCE OF THIS SOFTWARE.
-  ***************************************************************************** *)
-
-tslib/tslib.es6.js:
-  (*! *****************************************************************************
-  Copyright (c) Microsoft Corporation.
-  
-  Permission to use, copy, modify, and/or distribute this software for any
-  purpose with or without fee is hereby granted.
-  
-  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH
-  REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY
-  AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT,
-  INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM
-  LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR
-  OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
-  PERFORMANCE OF THIS SOFTWARE.
-  ***************************************************************************** *)
 
 react/cjs/react.production.min.js:
   (**
