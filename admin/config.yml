@@ -1752,21 +1752,21 @@ collections:
             label: Text
             name: e81e
             widget: string
-          - hint: 'Original text: Info@emildasolutions.com, key: -18a36b4d'
+          - hint: 'Original text: operations@emildasolutions.com, key: -680f272f'
             label: Text
-            name: '-18a36b4d'
+            name: '-680f272f'
             widget: string
           - hint: 'Original text: , key: e836'
             label: Text
             name: e836
             widget: string
+          - hint: 'Original text: +91 9403890933, key: a249045'
+            label: Text
+            name: a249045
+            widget: string
           - hint: 'Original text: (966) 50 672 4641, key: 5e16bc2b'
             label: Text
             name: 5e16bc2b
-            widget: string
-          - hint: 'Original text: +91 944 244 9431, key: 7102c02b'
-            label: Text
-            name: 7102c02b
             widget: string
           - hint: 'Original text: Name, key: 24eeab'
             label: Text
@@ -4492,19 +4492,15 @@ collections:
             label: Text
             name: 19673a2
             widget: string
-          - hint: 'Original text: operations@emildasolutions.com, key: -680f272f'
-            label: Text
-            name: '-680f272f'
-            widget: string
           - hint: >-
               Original text: Visit: https://www.emildasolutions.com/contact,
               key: -4647d001
             label: Text
             name: '-4647d001'
             widget: string
-          - hint: 'Original text: Phone: +91 - 9442449431, key: -35258b6a'
+          - hint: 'Original text: Phone: +91 -9403890933, key: 116f94e4'
             label: Text
-            name: '-35258b6a'
+            name: 116f94e4
             widget: string
           - hint: 'Original text: ‍, key: 200d'
             label: Text
@@ -4680,6 +4676,10 @@ collections:
             label: Text
             name: '-3be96f95'
             widget: string
+          - hint: 'Original text: Phone: +91 - 9403890933, key: 6751cfcc'
+            label: Text
+            name: 6751cfcc
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -4850,13 +4850,13 @@ collections:
             label: Link
             name: 52c2c8bb
             widget: string
+          - hint: 'Original link: tel:+919403890933, key: -3033fbd4'
+            label: Link
+            name: '-3033fbd4'
+            widget: string
           - hint: 'Original link: tel:+966506724641, key: c489888'
             label: Link
             name: c489888
-            widget: string
-          - hint: 'Original link: tel:+919442449431, key: 3354a8f6'
-            label: Link
-            name: 3354a8f6
             widget: string
           - hint: 'Original link: https://t.me/Paularasu, key: 77c1ad5c'
             label: Link
