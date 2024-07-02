@@ -1032,6 +1032,10 @@ collections:
             label: Text
             name: '-667f9cc9'
             widget: string
+          - hint: 'Original text: Pricing, key: 507137a6'
+            label: Text
+            name: 507137a6
+            widget: string
           - hint: 'Original text: Careers, key: -7bc27f6b'
             label: Text
             name: '-7bc27f6b'
@@ -1075,10 +1079,6 @@ collections:
           - hint: 'Original text: Careers Single, key: -15f989ad'
             label: Text
             name: '-15f989ad'
-            widget: string
-          - hint: 'Original text: Pricing, key: 507137a6'
-            label: Text
-            name: 507137a6
             widget: string
           - hint: 'Original text: Pricing Single, key: 6b7ada22'
             label: Text
@@ -4680,6 +4680,158 @@ collections:
             label: Text
             name: 6751cfcc
             widget: string
+          - hint: 'Original text: Pri, key: 13a87'
+            label: Text
+            name: 13a87
+            widget: string
+          - hint: 'Original text: cings, key: 5a47bb4'
+            label: Text
+            name: 5a47bb4
+            widget: string
+          - hint: >-
+              Original text: Affordable and straightforward pricing plans
+              tailored to your unique needs. Our competitive rates ensure you
+              get the best value for exceptional web design services., key:
+              -babcd66
+            label: Text
+            name: '-babcd66'
+            widget: text
+          - hint: 'Original text: Logo Design, key: -1781ae2d'
+            label: Text
+            name: '-1781ae2d'
+            widget: string
+          - hint: 'Original text: Price Starts From :, key: -3936fec4'
+            label: Text
+            name: '-3936fec4'
+            widget: string
+          - hint: 'Original text: 5000(Rs), key: -3e9622e5'
+            label: Text
+            name: '-3e9622e5'
+            widget: string
+          - hint: 'Original text: Brand Guidelines, key: 560e13fc'
+            label: Text
+            name: 560e13fc
+            widget: string
+          - hint: 'Original text: 3000(Rs), key: -e587ca3'
+            label: Text
+            name: '-e587ca3'
+            widget: string
+          - hint: 'Original text: App Development, key: 4748f97c'
+            label: Text
+            name: 4748f97c
+            widget: string
+          - hint: 'Original text: 120000(Rs), key: 717051e1'
+            label: Text
+            name: '717051e1'
+            widget: string
+          - hint: 'Original text: Content writing, key: -532007eb'
+            label: Text
+            name: '-532007eb'
+            widget: string
+          - hint: 'Original text: 1500(Rs), key: 2a6451e4'
+            label: Text
+            name: 2a6451e4
+            widget: string
+          - hint: 'Original text: Brand Collateral, key: -1c415350'
+            label: Text
+            name: '-1c415350'
+            widget: string
+          - hint: 'Original text: 3500(Rs), key: -5d9545e'
+            label: Text
+            name: '-5d9545e'
+            widget: string
+          - hint: 'Original text: Marketing Collateral, key: 6d9d14b1'
+            label: Text
+            name: 6d9d14b1
+            widget: string
+          - hint: 'Original text: Catalogue, key: -31c613b7'
+            label: Text
+            name: '-31c613b7'
+            widget: string
+          - hint: 'Original text: Price per page Starts From :, key: 2a490dc'
+            label: Text
+            name: 2a490dc
+            widget: string
+          - hint: 'Original text: 750(Rs), key: -4560932e'
+            label: Text
+            name: '-4560932e'
+            widget: string
+          - hint: 'Original text: Package Design, key: 74077318'
+            label: Text
+            name: '74077318'
+            widget: string
+          - hint: 'Original text: Website (1 Page), key: -28a3d078'
+            label: Text
+            name: '-28a3d078'
+            widget: string
+          - hint: 'Original text: 20000(Rs), key: -509e550e'
+            label: Text
+            name: '-509e550e'
+            widget: string
+          - hint: 'Original text: Website (2-3 Pages), key: -2dcee530'
+            label: Text
+            name: '-2dcee530'
+            widget: string
+          - hint: 'Original text: 35000(Rs), key: 4b0bfa4e'
+            label: Text
+            name: 4b0bfa4e
+            widget: string
+          - hint: 'Original text: Ecommerce (5-50 product pages), key: -1b0b565'
+            label: Text
+            name: '-1b0b565'
+            widget: string
+          - hint: 'Original text: 50000(Rs), key: 6c2ef7f5'
+            label: Text
+            name: 6c2ef7f5
+            widget: string
+          - hint: 'Original text: CMS website, key: -36beb75c'
+            label: Text
+            name: '-36beb75c'
+            widget: string
+          - hint: 'Original text: 40000(Rs), key: -2815770c'
+            label: Text
+            name: '-2815770c'
+            widget: string
+          - hint: 'Original text: SEO, key: 1403d'
+            label: Text
+            name: 1403d
+            widget: string
+          - hint: 'Original text: 25000(Rs), key: -493874b3'
+            label: Text
+            name: '-493874b3'
+            widget: string
+          - hint: 'Original text: PPC/Ads, key: 143cbac4'
+            label: Text
+            name: 143cbac4
+            widget: string
+          - hint: 'Original text: 25% of Budget, key: -2fa7e90'
+            label: Text
+            name: '-2fa7e90'
+            widget: string
+          - hint: 'Original text: Logo animation, key: -13dc0891'
+            label: Text
+            name: '-13dc0891'
+            widget: string
+          - hint: 'Original text: UX Design ( per screen), key: 50d0dbdd'
+            label: Text
+            name: 50d0dbdd
+            widget: string
+          - hint: 'Original text: UI Design (per screen), key: 5962e388'
+            label: Text
+            name: '5962e388'
+            widget: string
+          - hint: 'Original text: 5500(Rs), key: -3616faa0'
+            label: Text
+            name: '-3616faa0'
+            widget: string
+          - hint: 'Original text: Chatbot, key: -70b95cb1'
+            label: Text
+            name: '-70b95cb1'
+            widget: string
+          - hint: 'Original text: 65000(Rs), key: 7d94751'
+            label: Text
+            name: 7d94751
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -4699,6 +4851,10 @@ collections:
           - hint: 'Original link: /case-studies/, key: 62441716'
             label: Link
             name: '62441716'
+            widget: string
+          - hint: 'Original link: /pricing/, key: -d9445a8'
+            label: Link
+            name: '-d9445a8'
             widget: string
           - hint: 'Original link: /careers/, key: 38288f49'
             label: Link
@@ -5228,6 +5384,19 @@ collections:
                 widget: string
                 required: false
           - label: Image
+            name: 6c56bd0a
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
             name: '-28d81f4e'
             widget: object
             fields:
@@ -5658,19 +5827,6 @@ collections:
                 required: false
           - label: Image
             name: '57143690'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
-            name: 6c56bd0a
             widget: object
             fields:
               - name: url
