@@ -1048,6 +1048,10 @@ collections:
             label: Text
             name: 7132f14b
             widget: string
+          - hint: 'Original text: Cart, key: 1fef40'
+            label: Text
+            name: 1fef40
+            widget: string
           - hint: 'Original text: Pages, key: 494ffa4'
             label: Text
             name: 494ffa4
@@ -4832,6 +4836,82 @@ collections:
             label: Text
             name: 7d94751
             widget: string
+          - hint: 'Original text: Or pay another way, key: 4c3324bd'
+            label: Text
+            name: 4c3324bd
+            widget: string
+          - hint: 'Original text: Payment method, key: -7dbd5fa5'
+            label: Text
+            name: '-7dbd5fa5'
+            widget: string
+          - hint: 'Original text: Card, key: 1fef30'
+            label: Text
+            name: 1fef30
+            widget: string
+          - hint: 'Original text: Card information, key: 40cdc83c'
+            label: Text
+            name: 40cdc83c
+            widget: string
+          - hint: 'Original text: Name on card, key: -11531fc4'
+            label: Text
+            name: '-11531fc4'
+            widget: string
+          - hint: 'Original text: Country or region, key: 640b63a7'
+            label: Text
+            name: 640b63a7
+            widget: string
+          - hint: >-
+              Original text: Save my info for secure 1 click checkout, key:
+              -707971a2
+            label: Text
+            name: '-707971a2'
+            widget: string
+          - hint: >-
+              Original text: Pay faster the next time you visit This Website and
+              on thousands of other sites. , key: -2e2e1195
+            label: Text
+            name: '-2e2e1195'
+            widget: string
+          - hint: 'Original text: Check out, key: -70e383ea'
+            label: Text
+            name: '-70e383ea'
+            widget: string
+          - hint: >-
+              Original text: By confirming your subscription, you allow How the
+              Emilda Solutions to charge your card for this payment and future
+              payments in accordance with their terms. You can always cancel
+              your subscription., key: -32514e2b
+            label: Text
+            name: '-32514e2b'
+            widget: text
+          - hint: 'Original text: Full name, key: 1002a95c'
+            label: Text
+            name: 1002a95c
+            widget: string
+          - hint: 'Original text: Bank Account, key: 6fcf1c49'
+            label: Text
+            name: 6fcf1c49
+            widget: string
+          - hint: 'Original text: Enter bank details manually instead, key: 2cba900f'
+            label: Text
+            name: 2cba900f
+            widget: string
+          - hint: |-
+              Original text:  (takes 1-2 business days)
+                                      , key: 75a6b312
+            label: Text
+            name: 75a6b312
+            widget: string
+          - hint: >-
+              Original text: By clicking ‘Subscribe’ you agree to authorize
+              payments pursuant to , key: -4d4075a1
+            label: Text
+            name: '-4d4075a1'
+            widget: string
+          - hint: 'Original text: these terms, key: -55f5a56'
+            label: Text
+            name: '-55f5a56'
+            widget: string
       - label: Links
         name: links
         file: cms/_data/links.json
@@ -4867,6 +4947,10 @@ collections:
           - hint: 'Original link: /blog/, key: 55cb89fe'
             label: Link
             name: 55cb89fe
+            widget: string
+          - hint: 'Original link: /cart/, key: 55d4ae40'
+            label: Link
+            name: 55d4ae40
             widget: string
           - hint: 'Original link: /contact/, key: 16bdc13e'
             label: Link
@@ -5348,6 +5432,12 @@ collections:
               -ca5e89d
             label: Link
             name: '-ca5e89d'
+            widget: string
+          - hint: >-
+              Original link: https://stripe.com/ach-payments/authorization, key:
+              -f35a822
+            label: Link
+            name: '-f35a822'
             widget: string
       - label: Images
         name: images
@@ -5878,19 +5968,6 @@ collections:
                 widget: string
                 required: false
           - label: Image
-            name: '-47099410'
-            widget: object
-            fields:
-              - name: url
-                label: Image Url
-                widget: image
-                allow_multiple: false
-                required: false
-              - name: alt
-                label: Image Alt
-                widget: string
-                required: false
-          - label: Image
             name: 3b15e63
             widget: object
             fields:
@@ -6360,6 +6437,84 @@ collections:
                 required: false
           - label: Image
             name: '-2fc27090'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-5ffbf676'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-350602f3'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-4e59838d'
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 90fff4c
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: 459bc9f9
+            widget: object
+            fields:
+              - name: url
+                label: Image Url
+                widget: image
+                allow_multiple: false
+                required: false
+              - name: alt
+                label: Image Alt
+                widget: string
+                required: false
+          - label: Image
+            name: '-586a6774'
             widget: object
             fields:
               - name: url
